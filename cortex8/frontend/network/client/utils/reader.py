@@ -30,4 +30,4 @@ class Reader:
 if __name__ == "__main__":
     with Reader("/home/user/Downloads/exercise7/sample.mind.gz") as reader:
         print(reader.get_user())
-        # print(reader.get_snapshot())
+        print(reader.get_snapshot())

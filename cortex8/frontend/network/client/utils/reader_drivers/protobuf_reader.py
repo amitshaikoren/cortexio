@@ -2,7 +2,7 @@ import gzip
 import struct
 
 # TODO: delete:
-# from cortex8.backend.protocols.protocol_drivers.protobuf_data import User, Snapshot
+from cortex8.backend.protocols.protocol_drivers.protobuf_data import User, Snapshot
 # abs_path = "/home/user/Downloads/exercise7/sample.mind.gz"
 
 UINT32_SIZE = 4
