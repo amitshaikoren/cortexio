@@ -1,16 +1,20 @@
-UINT64_size = 8
-UINT32_size = 4
+from cortex8.utils import load_drivers
 
 
-reader_drivers = my_utils.load_drivers(drivers_path="./brainstreamer/platforms/reader/reader_drivers",
-                                       driver_type="class")
+drivers = load_drivers("reader_drivers")
 
 
 class Reader:
     def __init__(self, path, file_reader_scheme="protobuf"):
         self.path = path
-        self.file_reader = reader_drivers[file_reader_scheme](path)
+        self.file_reader = drivers[file_reader_scheme](path)
 
+    def __enter__(self):
+        self.file_reader.__enter__()
+        return self
+
+    def __exit__(self):
+        self.file_reader.__exit__()
 
     def get_user(self):
         return self.file_reader.get_user()
@@ -21,3 +25,9 @@ class Reader:
     def __iter__(self):
         while snapshot := self.file_reader.get_snapshot():
             yield snapshot
+
+
+if __name__ == "__main__":
+    with Reader("/home/user/Downloads/exercise7/sample.mind.gz") as reader:
+        print(reader.get_user())
+        # print(reader.get_snapshot())
