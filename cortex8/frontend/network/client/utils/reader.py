@@ -13,8 +13,8 @@ class Reader:
         self.file_reader.__enter__()
         return self
 
-    def __exit__(self):
-        self.file_reader.__exit__()
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.file_reader.__exit__(exc_type, exc_val, exc_tb)
 
     def get_user(self):
         return self.file_reader.get_user()

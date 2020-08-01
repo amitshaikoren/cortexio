@@ -2,8 +2,8 @@ import gzip
 import struct
 
 # TODO: delete:
-from cortex8.backend.protocols.protocol_drivers.protobuf_data import User, Snapshot
-abs_path = "/Users/apple/Desktop/Advanced_System_Design/Exercise_7/sample.mind.gz"
+# from cortex8.backend.protocols.protocol_drivers.protobuf_data import User, Snapshot
+# abs_path = "/home/user/Downloads/exercise7/sample.mind.gz"
 
 UINT32_SIZE = 4
 
@@ -47,9 +47,9 @@ class ProtobufReader:
             return None
 
 
-if __name__ == "__main__":
-    with ProtobufReader(abs_path) as pbr:
-        print(pbr.get_user())
-        print(pbr.get_snapshot())
+# if __name__ == "__main__":
+#    with ProtobufReader(abs_path) as pbr:
+#        print(pbr.get_user())
+#        print(pbr.get_snapshot())
 
 
