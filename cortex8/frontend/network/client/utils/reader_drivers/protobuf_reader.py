@@ -51,3 +51,5 @@ if __name__ == "__main__":
     with ProtobufReader(abs_path) as pbr:
         print(pbr.get_user())
         print(pbr.get_snapshot())
+
+
