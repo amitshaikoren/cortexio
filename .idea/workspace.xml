@@ -6,17 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="commit with saftey branch">
+      <change afterPath="$PROJECT_DIR$/cortex8/backend/databases/database_drivers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cortex8/backend/databases/database_drivers/mongoDB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cortex8/backend/databases/database_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/client_server_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/backend/databases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/databases/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -46,7 +53,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/preprojectlearning/FooBar-exercise5/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -62,6 +69,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -122,10 +130,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit with saftey branch" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596360379131">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="203" y="52" width="1201" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596372328127">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
+    <state x="203" y="52" width="1201" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.948@67.27.1853.948" timestamp="1596372328127" />
+    <state x="723" y="201" width="530" height="598" key="FileChooserDialogImpl" timestamp="1596372403313">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="723" y="201" width="530" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1596372403313" />
     <state width="619" height="69" key="GridCell.Tab.0.bottom" timestamp="1596360382960">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -142,10 +155,11 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="619" height="69" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596360382960" />
-    <state x="130" y="23" key="SettingsEditor" timestamp="1596360359106">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="130" y="27" key="SettingsEditor" timestamp="1596372573773">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
+    <state x="130" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1596372573773" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2" timestamp="1596359333725">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
