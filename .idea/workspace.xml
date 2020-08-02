@@ -5,7 +5,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="unrevisioned files" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="commit with saftey branch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596358194476</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit with saftey branch">
+      <created>1596358592522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596358592522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,36 +88,41 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unrevisioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="unrevisioned files" />
+    <MESSAGE value="commit with saftey branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit with saftey branch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596358272027">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596358272027" />
-    <state width="619" height="133" key="GridCell.Tab.0.bottom" timestamp="1596358202181">
+    <state width="619" height="69" key="GridCell.Tab.0.bottom" timestamp="1596359072522">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="619" height="133" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596358202181" />
-    <state width="619" height="133" key="GridCell.Tab.0.center" timestamp="1596358202180">
+    <state width="619" height="69" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596359072522" />
+    <state width="619" height="69" key="GridCell.Tab.0.center" timestamp="1596359072521">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="619" height="133" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596358202180" />
-    <state width="619" height="133" key="GridCell.Tab.0.left" timestamp="1596358202179">
+    <state width="619" height="69" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596359072521" />
+    <state width="619" height="69" key="GridCell.Tab.0.left" timestamp="1596359072520">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="619" height="133" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596358202179" />
-    <state width="619" height="133" key="GridCell.Tab.0.right" timestamp="1596358202180">
+    <state width="619" height="69" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596359072520" />
+    <state width="619" height="69" key="GridCell.Tab.0.right" timestamp="1596359072521">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="619" height="133" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596358202180" />
+    <state width="619" height="69" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596359072521" />
     <state x="130" y="23" key="SettingsEditor" timestamp="1596358258009">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596358258009" />
-    <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596358061556">
+    <state x="230" y="120" key="Vcs.Push.Dialog.v2" timestamp="1596358609591">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358061556" />
+    <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596358609591" />
+    <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596358694366">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
   </component>
 </project>
