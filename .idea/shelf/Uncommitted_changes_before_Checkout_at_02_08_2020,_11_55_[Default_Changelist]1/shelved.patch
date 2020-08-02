@@ -1,0 +1,18 @@
+Index: cortex8/frontend/network/client/utils/reader.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>UINT64_size = 8\nUINT32_size = 4\n\n\nreader_drivers = my_utils.load_drivers(drivers_path=\"./brainstreamer/platforms/reader/reader_drivers\",\n                                       driver_type=\"class\")\n\n\nclass Reader:\n    def __init__(self, path, file_reader_scheme=\"protobuf\"):\n        self.path = path\n        self.file_reader = reader_drivers[file_reader_scheme](path)\n\n\n    def get_user(self):\n        return self.file_reader.get_user()\n\n    def get_snapshot(self):\n        return self.file_reader.get_snapshot()\n\n    def __iter__(self):\n        while snapshot := self.file_reader.get_snapshot():\n            yield snapshot
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cortex8/frontend/network/client/utils/reader.py	(revision 69c4a5604cddebde33777bb9b4d7274037e4c103)
++++ cortex8/frontend/network/client/utils/reader.py	(date 1596358518156)
+@@ -5,6 +5,8 @@
+ reader_drivers = my_utils.load_drivers(drivers_path="./brainstreamer/platforms/reader/reader_drivers",
+                                        driver_type="class")
+ 
++hello my name is amit
++
+ 
+ class Reader:
+     def __init__(self, path, file_reader_scheme="protobuf"):
