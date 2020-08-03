@@ -8,6 +8,7 @@ import typing
 
 PROTOCOL = "protobuf"
 
+
 def upload_sample(host, port, data_path):
     with Reader(data_path) as reader:
         user = reader.get_user()
