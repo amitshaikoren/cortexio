@@ -1,25 +1,13 @@
-"""
-1. Do shit of protobuf
-2. implement protobuf driver
-
-"""
+import json
 import struct
-import io
-from .protobuf_data import User, Snapshot
 
-
-UINT32_SIZE = 4
-
-
-class ProtobufProtocol:
-    scheme = "protobuf"
+class JSONProtocol:
+    scheme = "json"
 
     def serialize(self, user, snapshot):
         user_data = user.SerializeToString()
-        user_len = struct.pack('I', len(user_data))
 
         snapshot_data = snapshot.SerializeToString()
-        snapshot_len = struct.pack('I', len(snapshot_data))
 
         serialized_msg = user_len + user_data + snapshot_len + snapshot_data
         return serialized_msg
