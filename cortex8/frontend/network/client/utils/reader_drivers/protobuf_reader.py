@@ -3,7 +3,9 @@ import struct
 
 # TODO: delete:
 from cortex8.backend.protocols.protocol_drivers.protobuf_data import User, Snapshot
-# abs_path = "/home/user/Downloads/exercise7/sample.mind.gz"
+from cortex8.backend.protocols.protocol_manager import ProtocolManager
+#abs_path_linux = "/home/user/Downloads/exercise7/sample.mind.gz"
+abs_path_mac = "/Users/apple/Desktop/Advanced_System_Design/Exercise_7/sample.mind.gz"
 
 UINT32_SIZE = 4
 
@@ -46,10 +48,12 @@ class ProtobufReader:
         except struct.error:
             return None
 
-
-# if __name__ == "__main__":
-#    with ProtobufReader(abs_path) as pbr:
-#        print(pbr.get_user())
-#        print(pbr.get_snapshot())
+# TODO: delete
+if __name__ == "__main__":
+    with ProtobufReader(abs_path_mac) as pbr:
+        client_server_protocol = ProtocolManager("protobuf")
+        user = pbr.get_user()
+        snapshot = pbr.get_snapshot()
+        print(client_server_protocol.convert_to_python_dict(user, snapshot))
 
 

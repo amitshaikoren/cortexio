@@ -26,7 +26,7 @@ class Reader:
         while snapshot := self.reader.get_snapshot():
             yield snapshot
 
-
+# TODO: delte
 if __name__ == "__main__":
     with Reader("/home/user/Downloads/exercise7/sample.mind.gz") as reader:
         print(reader.get_user())

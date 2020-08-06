@@ -5,41 +5,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_drivers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_drivers/json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/pose.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" afterDir="false" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="implemented protocol_manager.py and client.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/databases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/databases/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/rabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/rabbitMQ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/parsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/protobuf_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/protobuf_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/utils/utils_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/utils/utils_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="saftey_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,25 +42,41 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cortex8/backend" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.protobuf_reader">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/preprojectlearning/FooBar-exercise5/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="protobuf_reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cortex8" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/protobuf_reader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +92,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/preprojectlearning/FooBar-exercise5/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -105,19 +106,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cortex8" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/preprojectlearning/FooBar-exercise5/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,14 +127,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="cortex8" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.protobuf_reader" />
+        <item itemvalue="Python.reader" />
         <item itemvalue="Python.rabbitMQ" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,14 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596360386356</updated>
     </task>
-    <task id="LOCAL-00005" summary="Implemented mongoDB.py and database_manager.py">
-      <created>1596402898431</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1596402898431</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,60 +210,64 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unrevisioned files" />
     <MESSAGE value="commit with saftey branch" />
-    <MESSAGE value="Implemented mongoDB.py and database_manager.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented mongoDB.py and database_manager.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit with saftey branch" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="203" y="52" width="1201" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596372328127">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596360379131">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
-    <state x="203" y="52" width="1201" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.948@67.27.1853.948" timestamp="1596372328127" />
-    <state x="440" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1596402898118">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="168" key="GridCell.Tab.0.bottom" timestamp="1596714186815">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="440" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1596402898118" />
-    <state x="723" y="201" width="530" height="598" key="FileChooserDialogImpl" timestamp="1596372403313">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="168" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1596714186815" />
+    <state width="619" height="168" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596712573753" />
+    <state width="619" height="2" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
+    <state width="619" height="168" key="GridCell.Tab.0.center" timestamp="1596714186813">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="723" y="201" width="530" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1596372403313" />
-    <state width="1825" height="229" key="GridCell.Tab.0.bottom" timestamp="1596649383781">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="168" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1596714186813" />
+    <state width="619" height="168" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596712573752" />
+    <state width="619" height="2" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559414" />
+    <state width="619" height="168" key="GridCell.Tab.0.left" timestamp="1596714186812">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state width="619" height="69" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596360382960" />
-    <state width="1825" height="229" key="GridCell.Tab.0.bottom/67.27.1853.948@67.27.1853.948" timestamp="1596649383781" />
-    <state width="1825" height="229" key="GridCell.Tab.0.center" timestamp="1596649383780">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="168" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1596714186812" />
+    <state width="619" height="168" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596712573752" />
+    <state width="619" height="2" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559413" />
+    <state width="619" height="168" key="GridCell.Tab.0.right" timestamp="1596714186815">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state width="619" height="69" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596360382960" />
-    <state width="1825" height="229" key="GridCell.Tab.0.center/67.27.1853.948@67.27.1853.948" timestamp="1596649383780" />
-    <state width="1825" height="229" key="GridCell.Tab.0.left" timestamp="1596649383780">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="168" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1596714186815" />
+    <state width="619" height="168" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596712573752" />
+    <state width="619" height="2" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
+    <state width="619" height="2" key="GridCell.Tab.1.bottom" timestamp="1596709559416">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
-    <state width="619" height="69" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596360382959" />
-    <state width="1825" height="229" key="GridCell.Tab.0.left/67.27.1853.948@67.27.1853.948" timestamp="1596649383780" />
-    <state width="1825" height="229" key="GridCell.Tab.0.right" timestamp="1596649383781">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="2" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559416" />
+    <state width="619" height="2" key="GridCell.Tab.1.center" timestamp="1596709559415">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
-    <state width="619" height="69" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596360382960" />
-    <state width="1825" height="229" key="GridCell.Tab.0.right/67.27.1853.948@67.27.1853.948" timestamp="1596649383781" />
-    <state x="130" y="27" key="SettingsEditor" timestamp="1596546801869">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state width="619" height="2" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
+    <state width="619" height="2" key="GridCell.Tab.1.left" timestamp="1596709559415">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state width="619" height="2" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
+    <state width="619" height="2" key="GridCell.Tab.1.right" timestamp="1596709559416">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state width="619" height="2" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559416" />
+    <state x="130" y="23" key="SettingsEditor" timestamp="1596360359106">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
-    <state x="130" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1596546801869" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1596402902404">
-      <screen x="67" y="27" width="1853" height="948" />
+    <state x="230" y="120" key="Vcs.Push.Dialog.v2" timestamp="1596359333725">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1596402902404" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596358694366">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
-    <state x="572" y="26" width="840" height="1034" key="search.everywhere.popup" timestamp="1596488350253">
-      <screen x="67" y="27" width="1853" height="948" />
-    </state>
-    <state x="572" y="26" width="840" height="1034" key="search.everywhere.popup/67.27.1853.948@67.27.1853.948" timestamp="1596488350253" />
   </component>
 </project>
