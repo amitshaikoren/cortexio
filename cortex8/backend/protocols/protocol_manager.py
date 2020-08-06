@@ -2,6 +2,7 @@ from cortex8.utils.utils_functions import load_drivers
 
 
 drivers = load_drivers("protocol_drivers")
+print(drivers)
 
 
 class ProtocolManager:
@@ -13,3 +14,10 @@ class ProtocolManager:
 
     def deserialize(self, data):
         return self.protocol_driver.deserizile(data)
+
+    def convert_to_python_dict(self, user, snapshot):
+        return self.protocol_driver.convert_to_python_dict(user, snapshot)
+
+    def convert_from_python_dict(self, user_dict, snapshot_dict):
+        return self.protocol_driver.convert_from_python_dict(user_dict, snapshot_dict)
+
