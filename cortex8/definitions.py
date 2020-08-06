@@ -1,6 +1,5 @@
 """insert useful project variables that can easily be changed if necissary"""
 
-
 #######################
 # GENERAL
 #######################

@@ -8,32 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="implemented protocol_manager.py and client.py">
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/color_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/depth_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/feelings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/definitions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cortex8/utils/utils_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/databases/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/databases/database_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/rabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/rabbitMQ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/pose.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/pose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/parser_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/protobuf_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader_drivers/protobuf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/utils/utils_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/utils/utils_functions.py" afterDir="false" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/depth_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/depth_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/definitions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +177,14 @@
       <option name="presentableId" value="Default" />
       <updated>1596360386356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented A LOT:&#10;parsers&#10;changed stuff&#10;added definitions.py">
+      <created>1596746929157</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596746929157</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,13 +202,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unrevisioned files" />
     <MESSAGE value="commit with saftey branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit with saftey branch" />
+    <MESSAGE value="implemented protocol_manager.py and client.py" />
+    <MESSAGE value="implemented A LOT:&#10;parsers&#10;changed stuff&#10;added definitions.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented A LOT:&#10;parsers&#10;changed stuff&#10;added definitions.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596360379131">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
+    <state x="440" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1596746928819">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="440" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1596746928819" />
     <state width="1825" height="229" key="GridCell.Tab.0.bottom" timestamp="1596741079102">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
@@ -274,10 +264,11 @@
     </state>
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
     <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1596741363295" />
-    <state x="230" y="120" key="Vcs.Push.Dialog.v2" timestamp="1596359333725">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1596746936869">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1596746936869" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596358694366">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
