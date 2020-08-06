@@ -1,5 +1,5 @@
 from urllib.parse import urlparse
-from cortex8.utils.utils_functions import load_drivers
+from cortex8.utils import load_drivers
 
 
 drivers = load_drivers("database_drivers")

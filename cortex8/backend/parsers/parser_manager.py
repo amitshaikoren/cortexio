@@ -1,8 +1,7 @@
 import typing
-import json
-from cortex8.utils.utils_functions import load_drivers
-from cortex8.backend.messageQ.messageQ_manager import MessageQManager
-from cortex8.backend.parsers.encoders.encoding_manager import EncodingManager
+from cortex8.utils import load_drivers
+from cortex8.backend.messageQ import MessageQManager
+from cortex8.backend.parsers.encoders import EncodingManager
 
 # TODO: reorganize module and decouple things
 

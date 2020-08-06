@@ -1,7 +1,7 @@
 from cortex8.backend.parsers.encoders.encoding_manager import EncodingManager
+from cortex8 import PARSER_MQ_PROTOCOL
 
-
-encoding = EncodingManager("json")
+encoding = EncodingManager(PARSER_MQ_PROTOCOL)
 
 
 class PoseParser:

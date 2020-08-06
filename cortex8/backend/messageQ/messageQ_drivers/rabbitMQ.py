@@ -1,5 +1,6 @@
 import pika
 
+
 # TODO: make sure there is optimal amount of workers for the needed jobs, make decisions, what parser
 #       needs what. This means implement publish and consume optimally: look more into fanout
 #       and work_queue; look more into what it means to have x amount of workers, and queues.

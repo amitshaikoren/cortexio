@@ -1,1 +1,2 @@
-from .protobuf_reader import ProtobufReader
+from .protobuf import ProtobufReader
+

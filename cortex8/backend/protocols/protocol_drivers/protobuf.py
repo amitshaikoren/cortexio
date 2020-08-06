@@ -1,21 +1,20 @@
-"""
-1. Do shit of protobuf
-2. implement protobuf driver
-
-"""
 import struct
 import io
 from .protobuf_data import User, Snapshot
 import uuid
+from cortex8.utils import epoch_to_datetime
 
 
 UINT32_SIZE = 4
+DATA_DIR = "./cortex8/data/shared_data"
 
 
 class ProtobufProtocol:
     scheme = "protobuf"
 
-    def serialize(self, user, snapshot):
+    # TODO: no need for raw_data, consider reimplmenting protocol_manager in a clever way
+    # TODO: consider adding @staticmethod decorator if needed
+    def serialize(self, user, snapshot, raw_data):
         user_data = user.SerializeToString()
         user_len = struct.pack('I', len(user_data))
 
@@ -41,18 +40,30 @@ class ProtobufProtocol:
         return user, snapshot
 
     def convert_to_python_dict(self, deserialized_user, deserialized_snapshot):
-        raise NotImplementedError()
+        # TODO: Not very pretty, consider using a different design pattern to allow adding more fields easier
+        user_dict = _protobuf_user_to_python_dict(deserialized_user)
+        snapshot_dict = _protobuf_snapshot_to_python_dict(deserialized_snapshot)
+
+        snapshot_dict['user_id'] = user_id = user_dict["user_id"]
+        snapshot_dict['snapshot_id'] = snapshot_id = str(uuid.uuid4())
+
+        image_dir_path = f'{DATA_DIR}/{user_id}/{snapshot_id}'
+
+        snapshot_dict["color_image_path"] = f'{image_dir_path}/color_image.raw'
+        snapshot_dict["depth_image_path"] = f'{image_dir_path}/depth_image.raw'
+
+        return user_dict, snapshot_dict
 
     def convert_from_python_dict(self, user_dict, snapshot_dict):
         # TODO: implement, not relevant for this project so this step is skipped.
         raise NotImplementedError()
 
-
 ######################################
-# UTIL FUNCTIONS, NOT USED YET
+# UTIL FUNCTIONS
 ######################################
 
-def _snapshot_to_flat_dict(snapshot):
+
+def _protobuf_snapshot_to_python_dict(snapshot):
     d = dict()
 
     # TODO: Convert from epoch to datetime
@@ -81,32 +92,12 @@ def _snapshot_to_flat_dict(snapshot):
     return d
 
 
-def _user_to_flat_dict(user):
+def _protobuf_user_to_python_dict(user):
     d = dict()
 
     d["user_id"] = user.user_id
     d["username"] = user.username
-    d["birthday"] = user.birthday
-    d["gender"] = user.gender
+    d["birthday"] = epoch_to_datetime(user.birthday, milisecs=True)
+    d["gender"] = ['male', 'female', 'unknown'][user.gender]
 
     return d
-
-
-def _get_arranged_dicts(user, snapshot):
-    # User Preparation
-    user_dict = _user_to_flat_dict(user)
-
-    user_dict['gender'] = ['male', 'female', 'unknown'][user.gender]
-    user_dict['birthday'] = user.birthday
-
-    # Snapshot Preparation
-    snapshot_dict = _snapshot_to_flat_dict(snapshot)
-
-    snapshot_dict['snapshot_id'] = snapshot_id = str(uuid.uuid4())
-    snapshot_dict['user_id'] = user_id = user_dict["user_id"]
-
-    image_dir_path = f'{server_mq_protocol.get_data_path()}/{user_id}/{snapshot_id}'
-    snapshot_dict["color_image_path"] = f'{image_dir_path}/color_image.raw'
-    snapshot_dict["depth_image_path"] = f'{image_dir_path}/depth_image.raw'
-
-    return user_dict, snapshot_dict
