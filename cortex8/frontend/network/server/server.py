@@ -3,10 +3,7 @@ import flask
 from cortex8.backend.protocols import ProtocolManager
 from cortex8.backend.messageQ import MessageQManager
 from cortex8.utils import FileSystemManager as FSM
-
-
-CLIENT_SERVER_PROTOCOL = "protobuf"
-SERVER_MQ_PROTOCOL = "json"
+from cortex8 import CLIENT_SERVER_PROTOCOL, SERVER_MQ_PROTOCOL
 
 app = flask.Flask(__name__)
 url = None
