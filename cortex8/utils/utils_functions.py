@@ -41,7 +41,6 @@ def load_drivers(drivers_to_load):
     for name, obj in inspect.getmembers(mod):
         if inspect.isclass(obj):
             drivers[obj.scheme] = obj
-
     return drivers
 
 

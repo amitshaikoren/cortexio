@@ -1,5 +1,7 @@
 import flask
 
+import json
+
 from cortex8.backend.protocols import ProtocolManager
 from cortex8.backend.messageQ import MessageQManager
 from cortex8.utils import FileSystemManager as FSM
@@ -10,11 +12,14 @@ app = flask.Flask(__name__)
 url = None
 handler = None
 
-
-def run_server(host, port, publish=None):
+# TODO: replace url argument with optional cli argument, for now its just for testing
+def run_server(host, port, publish=None, mq_url="rabbitmq://127.0.0.1:5672/"):
     if publish:
         global handler
         handler = publish
+
+    global url
+    url = mq_url
 
     app.run(host=host, port=port)
 
@@ -42,7 +47,8 @@ def post_snapshot():
 
     color_image_data = snapshot.color_image.data
     # TODO: why not serialize also color_image
-    depth_image_data = server_mq_protocol.serialize(list(snapshot.depth_image.data))
+    # TODO: fix serialize and use that instead of json dumps, figure out why encode is needed
+    depth_image_data = json.dumps(list(snapshot.depth_image.data)).encode("utf-8")
     # TODO: dont like how arguments are delivered to function here, fix with how we use snapshot_dict
     FSM.save(color_image_data, snapshot_dict['color_image_path'])
     FSM.save(depth_image_data, snapshot_dict['depth_image_path'])

@@ -18,6 +18,7 @@ SAVER_MQ_PROTOCOL = "json"
 #######################
 SERVER_SNAPSHOT_PATH = "snapshot"
 BASE_SNAPSHOT_IMAGE_PATH = f'./{PROJECT_NAME}/gui/static/snapshot_images'
+SERVER_PARSER_SHARED_DATA_DIR = f'./{PROJECT_NAME}/data/shared_data'
 
 #######################
 # LOCAL TESTS PRE PRODUCTION

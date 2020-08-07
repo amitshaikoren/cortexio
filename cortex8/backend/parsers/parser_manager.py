@@ -56,3 +56,6 @@ def consume_publish_with_parser(parser_name, mq_url):
         mq.publish(parser_name, publishable_data)
 
     mq.consume('snapshot', handler)
+
+if __name__ == "__main__":
+    consume_publish_with_parser("", "rabbitmq://127.0.0.1:5672/")

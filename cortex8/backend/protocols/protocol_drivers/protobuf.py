@@ -3,10 +3,12 @@ import io
 from .protobuf_data import User, Snapshot
 import uuid
 from cortex8.utils import epoch_to_datetime
+import pathlib
+from cortex8 import SERVER_PARSER_SHARED_DATA_DIR
 
 
 UINT32_SIZE = 4
-DATA_DIR = "./cortex8/data/shared_data"
+
 
 
 class ProtobufProtocol:
@@ -40,17 +42,18 @@ class ProtobufProtocol:
         return user, snapshot
 
     def convert_to_python_dict(self, deserialized_user, deserialized_snapshot):
+        # TODO: reorganize function
         # TODO: Not very pretty, consider using a different design pattern to allow adding more fields easier
         user_dict = _protobuf_user_to_python_dict(deserialized_user)
         snapshot_dict = _protobuf_snapshot_to_python_dict(deserialized_snapshot)
 
-        snapshot_dict['user_id'] = user_id = user_dict["user_id"]
+        snapshot_dict['user_id'] = user_id = str(user_dict["user_id"])
         snapshot_dict['snapshot_id'] = snapshot_id = str(uuid.uuid4())
 
-        image_dir_path = f'{DATA_DIR}/{user_id}/{snapshot_id}'
+        image_dir_path = pathlib.Path(SERVER_PARSER_SHARED_DATA_DIR) / user_id / snapshot_id
 
-        snapshot_dict["color_image_path"] = f'{image_dir_path}/color_image.raw'
-        snapshot_dict["depth_image_path"] = f'{image_dir_path}/depth_image.raw'
+        snapshot_dict["color_image_path"] = str(image_dir_path / "color_image.raw")
+        snapshot_dict["depth_image_path"] = str(image_dir_path / "depth_image.raw")
 
         return user_dict, snapshot_dict
 
