@@ -4,8 +4,7 @@ from cortex8.utils import load_drivers
 
 
 drivers = load_drivers("reader_drivers")
-abs_path_linux = "/home/user/Downloads/exercise7/sample.mind.gz"
-#abs_path_mac = "/Users/apple/Desktop/Advanced_System_Design/Exercise_7/sample.mind.gz"
+
 
 class Reader:
     def __init__(self, path, reader_scheme="protobuf"):

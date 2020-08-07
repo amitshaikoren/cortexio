@@ -12,7 +12,7 @@ class ProtocolManager:
         return self.protocol_driver.serialize(user, snapshot, raw_data)
 
     def deserialize(self, data):
-        return self.protocol_driver.deseriazile(data)
+        return self.protocol_driver.deserialize(data)
 
     def convert_to_python_dict(self, user, snapshot):
         return self.protocol_driver.convert_to_python_dict(user, snapshot)

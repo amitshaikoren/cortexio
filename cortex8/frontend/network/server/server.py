@@ -3,7 +3,8 @@ import flask
 from cortex8.backend.protocols import ProtocolManager
 from cortex8.backend.messageQ import MessageQManager
 from cortex8.utils import FileSystemManager as FSM
-from cortex8 import CLIENT_SERVER_PROTOCOL, SERVER_MQ_PROTOCOL
+from cortex8 import CLIENT_SERVER_PROTOCOL, SERVER_MQ_PROTOCOL, SERVER_SNAPSHOT_PATH
+
 
 app = flask.Flask(__name__)
 url = None
@@ -18,7 +19,7 @@ def run_server(host, port, publish=None):
     app.run(host=host, port=port)
 
 
-@app.route('/snapshot', methods=['POST'])
+@app.route("/" + SERVER_SNAPSHOT_PATH, methods=['POST'])
 def post_snapshot():
     client_server_protocol = ProtocolManager(CLIENT_SERVER_PROTOCOL)
     server_mq_protocol = ProtocolManager(SERVER_MQ_PROTOCOL)
@@ -27,7 +28,7 @@ def post_snapshot():
     #       it's a bad idea to call get_data() method without checking the content length
     #       Idea for security implementation
     # TODO: Consider setting get_data cache parameter to false
-    client_data = flask.Request.get_data()
+    client_data = flask.request.get_data()
     user, snapshot = client_server_protocol.deserialize(client_data)
 
     if handler:
@@ -53,3 +54,6 @@ def post_snapshot():
 
     # TODO: return viable template
     return ""
+
+if __name__ == "__main__":
+    run_server("127.0.0.1", 8080)
