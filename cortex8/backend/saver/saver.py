@@ -37,3 +37,8 @@ class Saver:
         # thread for user topic
         thread = threading.Thread(target=self.run_saver, args=("user", mq_url))
         thread.start()
+
+
+if __name__ == "__main__":
+    saver = Saver("mongodb://127.0.0.1:27017")
+    saver.run_saver("pose", "rabbitmq://127.0.0.1:5672/")

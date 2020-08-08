@@ -7,18 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="implemented protocol_manager.py and client.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_drivers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/messageQ/messageQ_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/encoders/encoding_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/backend/databases/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/databases/database_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/parser_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_drivers/protobuf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/protocols/protocol_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortex8/backend/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/saver/saver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/definitions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortex8/utils/utils_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/utils/utils_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="saver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cortex8" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/backend/saver" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils/reader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/backend/saver/saver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,31 +167,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="cortex8" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.parser_manager" />
+        <item itemvalue="Python.saver" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.messageQ_manager" />
-        <item itemvalue="Python.reader" />
       </list>
     </recent_temporary>
   </component>
@@ -266,34 +241,38 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
-    <state width="1239" height="168" key="GridCell.Tab.0.bottom" timestamp="1596810440124">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1825" height="229" key="GridCell.Tab.0.bottom" timestamp="1596825443671">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1596809974817" />
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1596810440124" />
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1239" height="168" key="GridCell.Tab.0.center" timestamp="1596810440123">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1825" height="229" key="GridCell.Tab.0.bottom/67.27.1853.948@67.27.1853.948" timestamp="1596825443671" />
+    <state width="1825" height="229" key="GridCell.Tab.0.center" timestamp="1596825443670">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1596809974817" />
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1596810440123" />
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559414" />
-    <state width="1239" height="168" key="GridCell.Tab.0.left" timestamp="1596810440122">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1825" height="229" key="GridCell.Tab.0.center/67.27.1853.948@67.27.1853.948" timestamp="1596825443670" />
+    <state width="1825" height="229" key="GridCell.Tab.0.left" timestamp="1596825443669">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1596809974816" />
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1596810440122" />
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559413" />
-    <state width="1239" height="168" key="GridCell.Tab.0.right" timestamp="1596810440123">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state width="1825" height="229" key="GridCell.Tab.0.left/67.27.1853.948@67.27.1853.948" timestamp="1596825443669" />
+    <state width="1825" height="229" key="GridCell.Tab.0.right" timestamp="1596825443670">
+      <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1596809974817" />
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1596810440123" />
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
+    <state width="1825" height="229" key="GridCell.Tab.0.right/67.27.1853.948@67.27.1853.948" timestamp="1596825443670" />
     <state width="619" height="2" key="GridCell.Tab.1.bottom" timestamp="1596808108181">
       <screen x="0" y="23" width="1280" height="723" />
     </state>

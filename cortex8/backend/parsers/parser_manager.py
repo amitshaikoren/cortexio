@@ -3,11 +3,14 @@ from cortex8.utils import load_drivers
 from cortex8.backend.messageQ import MessageQManager
 from cortex8.backend.parsers.encoders import EncodingManager
 
+# TODO: change to a new driver/manager mechanism
+import json
+
 # TODO: reorganize module and decouple things
 
 drivers = load_drivers("parser_drivers")
 
-encoding = EncodingManager("json")
+#encoding = EncodingManager("json")
 
 
 # TODO: use previously mentioned class and implement __getitem_ in order to get elements
@@ -23,7 +26,7 @@ def _prepare_to_publish_data(topic, parsed_data, snapshot):
     metadata = dict(datetime=datetime, snapshot_id=snapshot_id, user_id=user_id)
     prepared_data = dict(**metadata, results={topic: data_dict})
 
-    return encoding.encode(prepared_data)
+    return json.dumps(prepared_data)
 
 
 class ParserManager:
@@ -32,9 +35,11 @@ class ParserManager:
 
     def parse(self, data):
         try:
-            decoded_data = encoding.decode(data)
+            # TODO: not pretty
+            data = data.decode("utf-8")
+            decoded_data = json.loads(data)
             parsed_data = self.parser_driver.parse(decoded_data)
-            encoded_data = encoding.encode(parsed_data)
+            encoded_data = json.dumps(parsed_data)
             return encoded_data
         # TODO: except relevant exception if data is not able to be decoded
         except:
@@ -57,5 +62,6 @@ def consume_publish_with_parser(parser_name, mq_url):
 
     mq.consume('snapshot', handler)
 
+
 if __name__ == "__main__":
-    consume_publish_with_parser("", "rabbitmq://127.0.0.1:5672/")
+    consume_publish_with_parser("color_image", "rabbitmq://127.0.0.1:5672/")

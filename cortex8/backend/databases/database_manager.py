@@ -8,7 +8,7 @@ drivers = load_drivers("database_drivers")
 class DatabaseManager:
     def __init__(self, url):
         parsed_url = urlparse(url)
-        scheme, host, port = parsed_url.scheme, parsed_url.host, parsed_url.port
+        scheme, host, port = parsed_url.scheme, parsed_url.hostname, parsed_url.port
         self.db = drivers[scheme](host, port)
 
     def __repr__(self):
@@ -31,3 +31,7 @@ class DatabaseManager:
 
     def get_snapshot_by_id(self, user_id, snapshot_id):
         return self.db.get_snapshot_by_id(user_id, snapshot_id)
+
+
+if __name__ == "__main__":
+    db = DatabaseManager()

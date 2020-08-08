@@ -31,13 +31,10 @@ def load_drivers(drivers_to_load):
 
     module_to_import = calling_module_pythonic_path + "." + drivers_to_load
 
-    try:
-        mod = importlib.import_module(module_to_import)
-    except ModuleNotFoundError():
-        # TODO: handle exception better
-        return None
+    mod = importlib.import_module(module_to_import)
+    # TODO: handle exception better
 
-    # create dictionary of {class_scheme:class} key,value pairs
+    # create dictionary of {class_scheme:class} key,value pairs (looks at __init__ file)
     for name, obj in inspect.getmembers(mod):
         if inspect.isclass(obj):
             drivers[obj.scheme] = obj

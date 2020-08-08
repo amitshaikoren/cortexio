@@ -8,6 +8,8 @@ PROJECT_NAME = "cortex8"
 #######################
 # PROTOCOLS
 #######################
+# Options: "protobuf", "json"
+
 CLIENT_SERVER_PROTOCOL = "protobuf"
 SERVER_MQ_PROTOCOL = "json"
 PARSER_MQ_PROTOCOL = "json"
@@ -19,6 +21,12 @@ SAVER_MQ_PROTOCOL = "json"
 SERVER_SNAPSHOT_PATH = "snapshot"
 BASE_SNAPSHOT_IMAGE_PATH = f'./{PROJECT_NAME}/gui/static/snapshot_images'
 SERVER_PARSER_SHARED_DATA_DIR = f'./{PROJECT_NAME}/data/shared_data'
+
+#######################
+# URLS
+#######################
+DEFAULT_MESSAGEQ_URL = "rabbitmq://127.0.0.1:5672/"
+DEFAULT_DATABASE_URL = "mongodb://127.0.0.1:27017"
 
 #######################
 # LOCAL TESTS PRE PRODUCTION
