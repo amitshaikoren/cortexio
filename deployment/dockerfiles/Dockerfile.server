@@ -1,0 +1,3 @@
+FROM cortex8-base
+CMD ["python", "/cortex8/frontend/network/server/server.py"]
+
