@@ -22,16 +22,32 @@ def run_api_server(host, port, database_url):
 
 @app.route("/users", methods=['GET'])
 def get_users():
-    # Todo: dont like this global
-    global db
-    #Todo: use protocol manager instead of json.dumps explicitly
-    return json.dumps(db.get_users())
+    data = db.get_users()
+    return client_server_protocol.serialize(data)
+
 
 @app.route("/users/<user_id>", methods=['GET'])
-def get_user_by_id():
-    global db
-    # Todo: use protocol manager instead of json.dumps explicitly
-    return json.dumps(db.get_user_by_id())
+def get_user_by_id(user_id):
+    data = db.get_user_by_id(user_id)
+    return client_server_protocol.serialize(data)
+
+
+@app.route("/users/<user_id>/snapshots", methods=['GET'])
+def get_snapshots_by_user_id(user_id):
+    data = db.get_snapshots_by_user_id(user_id)
+    return client_server_protocol.serialize(data)
+
+
+@app.route("/users/<user_id>/snapshots/<snapshot_id>", methods=['GET'])
+def get_snapshot_by_id(user_id, snapshot_id):
+    data = db.get_snapshot_by_id(user_id, snapshot_id)
+    return client_server_protocol.serialize(data)
+
+
+@app.route("/users/<user_id>/snapshots/<snapshot_id>/<result_name>", methods=['GET'])
+def get_snapshot_by_id(user_id, snapshot_id, result_name):
+    data = db.get_snapshot_by_id(user_id, snapshot_id)
+    return client_server_protocol.serialize(data)
 
 # TODO: mock tests with mock clients
 

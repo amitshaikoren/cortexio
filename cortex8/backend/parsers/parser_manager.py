@@ -1,7 +1,9 @@
 import typing
+import threading
 from cortex8.utils import load_drivers
 from cortex8.backend.messageQ import MessageQManager
 from cortex8.backend.parsers.encoders import EncodingManager
+from cortex8 import DEFAULT_MESSAGEQ_URL
 
 # TODO: change to a new driver/manager mechanism
 import json
@@ -10,8 +12,14 @@ import json
 
 drivers = load_drivers("parser_drivers")
 
-#encoding = EncodingManager("json")
+encoding = EncodingManager("json")
 
+parsers =  {
+    'pose',
+    'feeling',
+    'color_image',
+    'depth_image'
+}
 
 # TODO: use previously mentioned class and implement __getitem_ in order to get elements
 def _prepare_to_publish_data(topic, parsed_data, snapshot):
@@ -63,5 +71,11 @@ def consume_publish_with_parser(parser_name, mq_url):
     mq.consume('snapshot', handler)
 
 
+def run_parsers():
+    for parser in parsers:
+        t = threading.Thread(target=consume_publish_with_parser, args=(parser, DEFAULT_MESSAGEQ_URL))
+        t.start()
+
+
 if __name__ == "__main__":
-    consume_publish_with_parser("color_image", "rabbitmq://127.0.0.1:5672/")
+    run_parsers()

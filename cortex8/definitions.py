@@ -14,6 +14,7 @@ CLIENT_SERVER_PROTOCOL = "protobuf"
 SERVER_MQ_PROTOCOL = "json"
 PARSER_MQ_PROTOCOL = "json"
 SAVER_MQ_PROTOCOL = "json"
+API_DB_PROTOCOL = "json"
 
 #######################
 # PATHS
