@@ -8,6 +8,7 @@ class PoseParser:
     scheme = "pose"
 
     def __init__(self, snapshot):
+        print(snapshot)
         self.snapshot = encoding.decode(snapshot)
 
     def parse(self):

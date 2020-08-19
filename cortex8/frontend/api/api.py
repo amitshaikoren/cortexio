@@ -1,12 +1,11 @@
 import flask
 
-import json
 
 from cortex8.backend.protocols import ProtocolManager
 from cortex8.backend.messageQ import MessageQManager
 from cortex8.backend.databases import DatabaseManager
 from cortex8 import CLIENT_SERVER_PROTOCOL, SERVER_MQ_PROTOCOL, SERVER_SNAPSHOT_PATH, DEFAULT_DATABASE_URL
-
+from flask import jsonify
 
 app = flask.Flask(__name__)
 db = None
@@ -19,35 +18,36 @@ def run_api_server(host, port, database_url):
 
     app.run(host=host, port=port)
 
-
+#TODO: make jsonify call prettier
 @app.route("/users", methods=['GET'])
 def get_users():
     data = db.get_users()
-    return client_server_protocol.serialize(data)
+    users = [(user["user_id"], user["username"]) for user in data]
+    return jsonify(users)
 
 
-@app.route("/users/<user_id>", methods=['GET'])
+@app.route("/users/<int:user_id>", methods=['GET'])
 def get_user_by_id(user_id):
     data = db.get_user_by_id(user_id)
-    return client_server_protocol.serialize(data)
+    return jsonify(data)
 
 
-@app.route("/users/<user_id>/snapshots", methods=['GET'])
+@app.route("/users/<int:user_id>/snapshots", methods=['GET'])
 def get_snapshots_by_user_id(user_id):
     data = db.get_snapshots_by_user_id(user_id)
-    return client_server_protocol.serialize(data)
+    return jsonify(data)
 
 
 @app.route("/users/<user_id>/snapshots/<snapshot_id>", methods=['GET'])
 def get_snapshot_by_id(user_id, snapshot_id):
     data = db.get_snapshot_by_id(user_id, snapshot_id)
-    return client_server_protocol.serialize(data)
+    return jsonify(data)
 
-
-@app.route("/users/<user_id>/snapshots/<snapshot_id>/<result_name>", methods=['GET'])
-def get_snapshot_by_id(user_id, snapshot_id, result_name):
-    data = db.get_snapshot_by_id(user_id, snapshot_id)
-    return client_server_protocol.serialize(data)
+#TODO: implement
+#@app.route("/users/<user_id>/snapshots/<snapshot_id>/<result_name>", methods=['GET'])
+#def get_snapshot_by_id(user_id, snapshot_id, result_name):
+ #   data = db.get_snapshot_by_id(user_id, snapshot_id)
+   # return client_server_protocol.serialize(data)
 
 # TODO: mock tests with mock clients
 

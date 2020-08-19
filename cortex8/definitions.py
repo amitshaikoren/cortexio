@@ -1,5 +1,7 @@
 """insert useful project variables that can easily be changed if necessary"""
 
+import pathlib
+
 #######################
 # GENERAL
 #######################
@@ -19,9 +21,10 @@ API_DB_PROTOCOL = "json"
 #######################
 # PATHS
 #######################
+PROJECT_ROOT_DIR = pathlib.Path(__file__).parent.parent
 SERVER_SNAPSHOT_PATH = "snapshot"
-BASE_SNAPSHOT_IMAGE_PATH = f'./{PROJECT_NAME}/gui/static/snapshot_images'
-SERVER_PARSER_SHARED_DATA_DIR = f'./{PROJECT_NAME}/data/shared_data'
+BASE_SNAPSHOT_IMAGE_PATH = PROJECT_ROOT_DIR / PROJECT_NAME / 'gui' / 'static' / 'snapshot_images'
+SERVER_PARSER_SHARED_DATA_DIR = PROJECT_ROOT_DIR / PROJECT_NAME / 'data' / 'shared_data'
 
 #######################
 # URLS

@@ -15,8 +15,6 @@ drivers = load_drivers("encoding_drivers")
 class EncodingManager:
     def __init__(self, scheme, data=""):
         self.driver = drivers[scheme]()
-        # TODO: not sure if this is best practice, because data is not necessarily encoded
-        self.decoded_data = self.decode(data)
 
     def encode(self, raw_data):
         return self.driver.encode(raw_data)

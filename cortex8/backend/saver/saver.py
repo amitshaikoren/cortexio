@@ -25,7 +25,7 @@ class Saver:
         mq = MessageQManager(mq_url)
 
         def handler(data):
-            self.save(data)
+            self.save(topic, data)
 
         mq.consume(topic, handler)
 
@@ -41,4 +41,4 @@ class Saver:
 
 if __name__ == "__main__":
     saver = Saver("mongodb://127.0.0.1:27017")
-    saver.run_saver("pose", "rabbitmq://127.0.0.1:5672/")
+    saver.run_all_savers("rabbitmq://127.0.0.1:5672/")

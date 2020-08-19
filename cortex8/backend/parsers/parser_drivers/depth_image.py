@@ -7,7 +7,7 @@ from cortex8 import PARSER_MQ_PROTOCOL, BASE_SNAPSHOT_IMAGE_PATH
 serializer = ProtocolManager(PARSER_MQ_PROTOCOL)
 
 
-class ColorImageParser:
+class DepthImageParser:
     scheme = "depth_image"
 
     def __init__(self, snapshot):

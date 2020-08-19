@@ -15,3 +15,6 @@ class FileSystemManager:
         p = pathlib.Path(path)
         with p.open(mode='rb+') as fd:
             return fd.read()
+
+
+#TODO: fix save method
