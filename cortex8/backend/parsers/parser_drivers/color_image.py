@@ -18,7 +18,7 @@ class ColorImageParser:
 
     @staticmethod
     def parse(snapshot):
-        print("triggering color image parser")
+        logger.debug("triggering color_image parser")
 
         width = snapshot["color_image_width"]
         height = snapshot["color_image_height"]
@@ -35,10 +35,13 @@ class ColorImageParser:
         image_path = base_path / user_id / snapshot_id / "color_image.png"
 
         image = Image.frombytes('RGB', size, color_image_data_stream)
-        bytes_image = image.tobytes()
-        FSM.save(bytes_image, image_path)
 
-        return dict(image_path=image_path, image_width=width, image_height=height)
+        image_path.parent.mkdir(parents=True, exist_ok=True)
+        image.save(image_path)
+        #bytes_image = image.tobytes()
+        #FSM.save(bytes_image, image_path)
+
+        return dict(image_path=str(image_path), image_width=width, image_height=height)
 
 
 
