@@ -5,14 +5,88 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="fixed bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/color_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortex8/backend/parsers/parser_drivers/color_image.py" afterDir="false" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="Added CLI and restructured project">
+      <change afterPath="$PROJECT_DIR$/../cortexio/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/.idea/cortexio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/parser_drivers/depth_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/parser_drivers/feelings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/parser_drivers/pose.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/messageQ/messageQ_drivers/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/saver/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cortexio/cortexio/server/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/databases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/databases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/databases/database_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/databases/database_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/databases/database_drivers/mongoDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/databases/database_drivers/mongoDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/databases/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/databases/database_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/messageQ/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/messageQ/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/messageQ/messageQ_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/messageQ/messageQ_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/messageQ/messageQ_drivers/rabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/messageQ/messageQ_drivers/rabbitMQ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/messageQ/messageQ_drivers/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/messageQ/messageQ_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/messageQ/messageQ_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/encoders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/encoders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/encoders/encoding_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/encoders/encoding_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/encoders/encoding_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/encoders/encoding_drivers/json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/encoders/encoding_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/encoders/encoding_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/parser_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/parser_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/parser_drivers/color_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/parser_drivers/color_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/parser_drivers/depth_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/parser_drivers/feelings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/parser_drivers/pose.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/parsers/parser_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/parsers/parser_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_drivers/json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_drivers/protobuf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_drivers/protobuf_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_drivers/protobuf_data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_drivers/protobuf_data/cortex.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_drivers/protobuf_data/cortex.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_drivers/protobuf_data/cortex_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_drivers/protobuf_data/cortex_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/protocols/protocol_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/protocols/protocol_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/saver/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/api/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/backend/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/saver/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/definitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/cli/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/cli/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/api/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/api/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/platforms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/cli/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/saver/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/client/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/client/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/utils/reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/client/utils/reader_drivers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/utils/reader_drivers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/client/utils/reader_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/client/utils/reader_drivers/protobuf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/server/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/frontend/network/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/server/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/utils/utils_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/utils/utils_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/cortex8/utils/utils_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/cortexio/utils/utils_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/deployment/dockerfiles/Dockerfile.base" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/deployment/dockerfiles/Dockerfile.base" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cortexio/deployment/dockerfiles/Dockerfile.server" beforeDir="false" afterPath="$PROJECT_DIR$/../cortexio/deployment/dockerfiles/Dockerfile.server" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -34,9 +108,36 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.server">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cortex8" />
+      <recent name="$PROJECT_DIR$/cortex8/frontend/network/client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.__main__">
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cortexio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/network/client/utils" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/network/client/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,29 +159,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortex8" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/api/api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortex8" />
+      <module name="cortexio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -101,7 +181,7 @@
       <method v="2" />
     </configuration>
     <configuration name="definitions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortex8" />
+      <module name="cortexio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -122,7 +202,7 @@
       <method v="2" />
     </configuration>
     <configuration name="parser_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortex8" />
+      <module name="cortexio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -143,7 +223,7 @@
       <method v="2" />
     </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortex8" />
+      <module name="cortexio" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -163,13 +243,63 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="cortexio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="cortexio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="cortexio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.__main__" />
+      <item itemvalue="Python.client" />
+      <item itemvalue="Python.definitions" />
+      <item itemvalue="Python.parser_manager" />
+      <item itemvalue="Python.server" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.client" />
+        <item itemvalue="Python.__main__" />
         <item itemvalue="Python.parser_manager" />
+        <item itemvalue="Python.client" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.definitions" />
-        <item itemvalue="Python.api" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +337,7 @@
     </task>
     <task active="true" id="Default" summary="Default task">
       <changelist id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="commit with saftey branch" />
+      <changelist id="" name="New changelist" comment="" />
       <created>1596360386356</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -219,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597839792852</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed bugs">
+      <created>1597859827525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597859827526</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,97 +376,119 @@
     <MESSAGE value="unrevisioned files" />
     <MESSAGE value="commit with saftey branch" />
     <MESSAGE value="fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs" />
+    <MESSAGE value="Added CLI and restructured project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CLI and restructured project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596360379131">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="523" y="249" key="#Notifications" timestamp="1598273274444">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="523" y="249" key="#Notifications/0.23.1280.726@0.23.1280.726" timestamp="1598273274444" />
+    <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598272730664">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
-    <state width="1259" height="165" key="GridCell.Tab.0.bottom" timestamp="1597844678304">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.724@0.23.1280.724" timestamp="1598272730664" />
+    <state x="513" y="282" key="Github.ShareDialog" timestamp="1598283661869">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="513" y="282" key="Github.ShareDialog/0.23.1280.721@0.23.1280.721" timestamp="1598283661869" />
+    <state x="513" y="283" key="Github.ShareDialog/0.23.1280.724@0.23.1280.724" timestamp="1598282484965" />
+    <state x="513" y="284" key="Github.ShareDialog/0.23.1280.726@0.23.1280.726" timestamp="1598273361638" />
+    <state width="1259" height="165" key="GridCell.Tab.0.bottom" timestamp="1598288051339">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597601371344" />
     <state width="1259" height="168" key="GridCell.Tab.0.bottom/0.23.1280.712@0.23.1280.712" timestamp="1597773179833" />
     <state width="1259" height="168" key="GridCell.Tab.0.bottom/0.23.1280.713@0.23.1280.713" timestamp="1597775407425" />
-    <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1597844678304" />
-    <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1597841663823" />
+    <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.715@0.23.1280.715" timestamp="1598184944377" />
+    <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.716@0.23.1280.716" timestamp="1598098687477" />
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.717@0.23.1280.717" timestamp="1597602332935" />
-    <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1596810440124" />
+    <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1598288051339" />
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1259" height="165" key="GridCell.Tab.0.center" timestamp="1597844678301">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1259" height="165" key="GridCell.Tab.0.center" timestamp="1598288051338">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1597601371343" />
     <state width="1259" height="168" key="GridCell.Tab.0.center/0.23.1280.712@0.23.1280.712" timestamp="1597773179833" />
     <state width="1259" height="168" key="GridCell.Tab.0.center/0.23.1280.713@0.23.1280.713" timestamp="1597775407424" />
-    <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1597844678301" />
-    <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1597841663822" />
+    <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.715@0.23.1280.715" timestamp="1598184944375" />
+    <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.716@0.23.1280.716" timestamp="1598098687477" />
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.717@0.23.1280.717" timestamp="1597602332934" />
-    <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1596810440123" />
+    <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1598288051338" />
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559414" />
-    <state width="1259" height="165" key="GridCell.Tab.0.left" timestamp="1597844678299">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1259" height="165" key="GridCell.Tab.0.left" timestamp="1598288051338">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1597601371343" />
     <state width="1259" height="168" key="GridCell.Tab.0.left/0.23.1280.712@0.23.1280.712" timestamp="1597773179832" />
     <state width="1259" height="168" key="GridCell.Tab.0.left/0.23.1280.713@0.23.1280.713" timestamp="1597775407424" />
-    <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1597844678299" />
-    <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1597841663822" />
+    <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.715@0.23.1280.715" timestamp="1598184944374" />
+    <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.716@0.23.1280.716" timestamp="1598098687477" />
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.717@0.23.1280.717" timestamp="1597602332934" />
-    <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1596810440122" />
+    <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1598288051338" />
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559413" />
-    <state width="1259" height="165" key="GridCell.Tab.0.right" timestamp="1597844678302">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1259" height="165" key="GridCell.Tab.0.right" timestamp="1598288051339">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1597601371344" />
     <state width="1259" height="168" key="GridCell.Tab.0.right/0.23.1280.712@0.23.1280.712" timestamp="1597773179833" />
     <state width="1259" height="168" key="GridCell.Tab.0.right/0.23.1280.713@0.23.1280.713" timestamp="1597775407425" />
-    <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1597844678302" />
-    <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1597841663823" />
+    <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.715@0.23.1280.715" timestamp="1598184944376" />
+    <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.716@0.23.1280.716" timestamp="1598098687477" />
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.717@0.23.1280.717" timestamp="1597602332935" />
-    <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1596810440123" />
+    <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1598288051339" />
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1239" height="176" key="GridCell.Tab.1.bottom" timestamp="1597592462152">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1239" height="176" key="GridCell.Tab.1.bottom" timestamp="1598288051334">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="176" key="GridCell.Tab.1.bottom/0.23.1280.713@0.23.1280.713" timestamp="1597591593676" />
     <state width="1239" height="176" key="GridCell.Tab.1.bottom/0.23.1280.715@0.23.1280.715" timestamp="1597592462152" />
+    <state width="1239" height="176" key="GridCell.Tab.1.bottom/0.23.1280.721@0.23.1280.721" timestamp="1598288051334" />
     <state width="619" height="2" key="GridCell.Tab.1.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596808108181" />
     <state width="619" height="2" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559416" />
-    <state width="1239" height="176" key="GridCell.Tab.1.center" timestamp="1597592462152">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1239" height="176" key="GridCell.Tab.1.center" timestamp="1598288051333">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="176" key="GridCell.Tab.1.center/0.23.1280.713@0.23.1280.713" timestamp="1597591593675" />
     <state width="1239" height="176" key="GridCell.Tab.1.center/0.23.1280.715@0.23.1280.715" timestamp="1597592462152" />
+    <state width="1239" height="176" key="GridCell.Tab.1.center/0.23.1280.721@0.23.1280.721" timestamp="1598288051333" />
     <state width="619" height="2" key="GridCell.Tab.1.center/0.23.1280.723@0.23.1280.723" timestamp="1596808108180" />
     <state width="619" height="2" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1239" height="176" key="GridCell.Tab.1.left" timestamp="1597592462151">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1239" height="176" key="GridCell.Tab.1.left" timestamp="1598288051333">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="176" key="GridCell.Tab.1.left/0.23.1280.713@0.23.1280.713" timestamp="1597591593675" />
     <state width="1239" height="176" key="GridCell.Tab.1.left/0.23.1280.715@0.23.1280.715" timestamp="1597592462151" />
+    <state width="1239" height="176" key="GridCell.Tab.1.left/0.23.1280.721@0.23.1280.721" timestamp="1598288051333" />
     <state width="619" height="2" key="GridCell.Tab.1.left/0.23.1280.723@0.23.1280.723" timestamp="1596808108180" />
     <state width="619" height="2" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1239" height="176" key="GridCell.Tab.1.right" timestamp="1597592462152">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state width="1239" height="176" key="GridCell.Tab.1.right" timestamp="1598288051333">
+      <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state width="1239" height="176" key="GridCell.Tab.1.right/0.23.1280.713@0.23.1280.713" timestamp="1597591593676" />
     <state width="1239" height="176" key="GridCell.Tab.1.right/0.23.1280.715@0.23.1280.715" timestamp="1597592462152" />
+    <state width="1239" height="176" key="GridCell.Tab.1.right/0.23.1280.721@0.23.1280.721" timestamp="1598288051333" />
     <state width="619" height="2" key="GridCell.Tab.1.right/0.23.1280.723@0.23.1280.723" timestamp="1596808108181" />
     <state width="619" height="2" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559416" />
     <state x="118" y="70" key="MergeDialog" timestamp="1597406262579">
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="118" y="70" key="MergeDialog/0.23.1280.713@0.23.1280.713" timestamp="1597406262579" />
-    <state x="130" y="23" key="SettingsEditor" timestamp="1596360359106">
+    <state x="130" y="23" width="997" height="721" key="SettingsEditor" timestamp="1598283536581">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="130" y="23" width="997" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1598283536581" />
+    <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
+    <state x="130" y="23" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1598272839664" />
+    <state x="478" y="255" key="VCS.EditChangelistDialog" timestamp="1598283074798">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
+    <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
     <state x="230" y="119" key="Vcs.Push.Dialog.v2" timestamp="1597839794832">
       <screen x="0" y="23" width="1280" height="716" />
     </state>
@@ -343,5 +503,17 @@
     </state>
     <state x="418" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.713@0.23.1280.713" timestamp="1597406252697" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
+    <state x="338" y="23" width="604" height="726" key="find.popup" timestamp="1598272446952">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="338" y="23" width="604" height="726" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1598272446952" />
+    <state x="447" y="247" key="git4idea.rebase.GitRebaseDialog" timestamp="1598282723623">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="447" y="247" key="git4idea.rebase.GitRebaseDialog/0.23.1280.721@0.23.1280.721" timestamp="1598282723623" />
+    <state x="462" y="280" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1598283349900">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="462" y="280" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1280.721@0.23.1280.721" timestamp="1598283349900" />
   </component>
 </project>
