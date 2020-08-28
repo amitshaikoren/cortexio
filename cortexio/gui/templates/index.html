@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CortexIO</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../static/external_css/w3/w3.css">
-<link rel="stylesheet" href="../static/external_css/font_awesome/css/font-awesome.min.css">
-<link rel='stylesheet' type='text/css' href='../static/css/index.css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/external_css/w3/w3.css">
+	<link rel="stylesheet" href="../static/external_css/font_awesome/css/font-awesome.min.css">
+	<link rel='stylesheet' type='text/css' href='../static/css/index.css'>
+	<link rel='stylesheet' type='text/css' href='../static/css/all_templates.css'>
+	<script src="../static/js/all_templates.js"></script>
 <style>
 
 </style>
@@ -23,8 +25,13 @@
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <!-- Page Content -->
 <div id="main">
+	<button class="w3-button w3-xlarge" onclick="openNav()">☰</button>
+	<div class="topnav">
+		<img src="../static/gui_images/logo.png" alt="logo" style="max-width: 50%">
+	  <input type="text" placeholder="Search..">
+	</div>
 
-  <button class="w3-button w3-xlarge" onclick="openNav()">☰</button>
+
 
   <div class="row">
     <div class="column">
@@ -187,17 +194,7 @@
 </div>
 
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("main").style.marginLeft = "200px";
-  document.getElementById("main").style.opacity="0.3"
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.getElementById("main").style.opacity="1"
-}
 </script>
 
 

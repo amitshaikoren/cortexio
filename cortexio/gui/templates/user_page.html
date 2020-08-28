@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CortexIO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/external_css/w3/w3.css">
+    <link rel="stylesheet" href="../static/external_css/font_awesome/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href='../static/css/user_page.css'>
+    <link rel='stylesheet' type='text/css' href='../static/css/all_templates.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="../static/js/all_templates.js"></script>
+    <script src="../static/js/user_page.js"></script>
+    <style>
+
+    </style>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'Guardians of the Galaxy');
+      data.addColumn('number', 'The Avengers');
+      data.addColumn('number', 'Transformers: Age of Extinction');
+
+      data.addRows([
+        [1,  37.8, 80.8, 41.8],
+        [2,  30.9, 69.5, 32.4],
+        [3,  25.4,   57, 25.7],
+        [4,  11.7, 18.8, 10.5],
+        [5,  11.9, 17.6, 10.4],
+        [6,   8.8, 13.6,  7.7],
+        [7,   7.6, 12.3,  9.6],
+        [8,  12.3, 29.2, 10.6],
+        [9,  16.9, 42.9, 14.8],
+        [10, 12.8, 30.9, 11.6],
+        [11,  5.3,  7.9,  4.7],
+        [12,  6.6,  8.4,  5.2],
+        [13,  4.8,  6.3,  3.6],
+        [14,  4.2,  6.2,  3.4]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Box Office Earnings in First Two Weeks of Opening',
+          subtitle: 'in millions of dollars (USD)'
+        },
+        width: 900,
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+
+<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<!-- Page Content -->
+<div id="main">
+
+    <button class="w3-button w3-xlarge" onclick="openNav()">☰</button>
+
+    <div class="w3-content w3-display-container">
+        <header><h1>COLOR IMAGE</h1></header>
+        <div class="w3-display-container myColorImageSlides center">
+          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            French Alps
+          </div>
+        </div>
+
+        <div class="w3-display-container myColorImageSlides center">
+          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Northern Lights
+          </div>
+        </div>
+
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+
+
+
+    <div class="w3-content w3-display-container">
+        <header><h1>DEPTH IMAGE</h1></header>
+        <div class="w3-display-container myDepthImageSlides center">
+          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            French Alps
+          </div>
+        </div>
+
+        <div class="w3-display-container myDepthImageSlides center">
+          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Northern Lights
+          </div>
+        </div>
+
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+
+    <div id="line_top_x"></div>
+
+
+
+<script>
+showDivs(slideIndex);
+
+
+</script>
+
+</body>
+</html>
