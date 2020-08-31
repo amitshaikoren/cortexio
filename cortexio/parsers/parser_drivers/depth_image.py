@@ -30,7 +30,6 @@ class DepthImageParser:
         image_path.parent.mkdir(parents=True, exist_ok=True)
 
         plt.savefig(image_path)
-        print(f'saved image to {image_path}')
 
         return dict(data_path=str(image_path), image_width=fig_width, image_height=fig_height)
 

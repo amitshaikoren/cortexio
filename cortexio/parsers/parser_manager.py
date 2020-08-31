@@ -16,7 +16,7 @@ drivers = load_drivers("parser_drivers")
 
 parsers =  {
     'pose',
-    'feeling',
+    'feelings',
     'color_image',
     'depth_image'
 }

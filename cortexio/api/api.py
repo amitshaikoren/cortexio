@@ -19,36 +19,41 @@ def run_api_server(host, port, database_url):
     app.run(host=host, port=port)
 
 
+def _wrap_response(data):
+    response = jsonify(data)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
 #TODO: make jsonify call prettier
 @app.route("/users", methods=['GET'])
 def get_users():
     data = db.get_users()
     users = [(user["user_id"], user["username"]) for user in data]
-    return jsonify(users)
+    return _wrap_response(users)
 
 
 @app.route("/users/<int:user_id>", methods=['GET'])
 def get_user_by_id(user_id):
     data = db.get_user_by_id(user_id)
-    return jsonify(data)
+    return _wrap_response(data)
 
 
-@app.route("/users/<int:user_id>/snapshots", methods=['GET'])
+@app.route("/users/<user_id>/snapshots", methods=['GET'])
 def get_snapshots_by_user_id(user_id):
     data = db.get_snapshots_by_user_id(user_id)
-    return jsonify(data)
+    return _wrap_response(data)
 
 
 @app.route("/users/<int:user_id>/snapshots/<snapshot_id>", methods=['GET'])
 def get_snapshot_by_id(user_id, snapshot_id):
     data = db.get_snapshot_by_id(user_id, snapshot_id)
-    return jsonify(data)
+    return _wrap_response(data)
 
 
 @app.route('/users/<int:user_id>/snapshots/<snapshot_id>/<result_name>')
 def get_snapshot_result(user_id, snapshot_id, result_name):
     result = db.get_snapshot_by_id(user_id, snapshot_id)['results'][result_name]
-    return jsonify(result)
+    return _wrap_response(result)
 
 
 @app.route('/users/<int:user_id>/snapshots/<snapshot_id>/<result_name>/data')

@@ -1,6 +1,5 @@
 import threading
 
-
 from cortexio.platforms.databases import DatabaseManager
 from cortexio.platforms.protocols import ProtocolManager
 from cortexio.platforms.messageQ import MessageQManager
