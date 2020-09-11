@@ -5,12 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="Added CLI and restructured project">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/gui/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/gui/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Ignore Files Support" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -53,7 +50,7 @@
       <recent name="$PROJECT_DIR$/cortex8/frontend/network/client" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.server (1)">
+  <component name="RunManager" selected="Python.saver">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cortexio" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,19 +93,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortexio" />
+    <configuration name="client (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cortex8" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/network/client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortexio/client" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/network/client/client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortexio/client/client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,19 +114,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="parser_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortexio" />
+    <configuration name="parser_manager (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cortex8" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/backend/parsers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortexio/parsers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/backend/parsers/parser_manager.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortexio/parsers/parser_manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="saver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cortex8" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortexio/saver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortexio/saver/saver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,27 +169,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortexio/server/server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortexio" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortex8/frontend/network/server" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortex8/frontend/network/server/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,18 +222,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.__main__" />
-      <item itemvalue="Python.client" />
-      <item itemvalue="Python.parser_manager" />
-      <item itemvalue="Python.server" />
       <item itemvalue="Python.server (1)" />
+      <item itemvalue="Python.client (1)" />
+      <item itemvalue="Python.parser_manager (1)" />
+      <item itemvalue="Python.saver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.saver" />
+        <item itemvalue="Python.parser_manager (1)" />
+        <item itemvalue="Python.client (1)" />
         <item itemvalue="Python.server (1)" />
         <item itemvalue="Python.__main__" />
-        <item itemvalue="Python.parser_manager" />
-        <item itemvalue="Python.client" />
-        <item itemvalue="Python.server" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597859827526</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added static files to gui">
+      <created>1598519897761</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598519897761</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,7 +318,8 @@
     <MESSAGE value="commit with saftey branch" />
     <MESSAGE value="fixed bugs" />
     <MESSAGE value="Added CLI and restructured project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CLI and restructured project" />
+    <MESSAGE value="Added static files to gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added static files to gui" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -328,17 +333,21 @@
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.724@0.23.1280.724" timestamp="1598272730664" />
     <state x="203" y="52" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.948@67.27.1853.948" timestamp="1598386563877" />
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1598386272774">
+    <state x="440" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1598519897459">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1598386272774" />
+    <state x="440" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1598519897459" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1598969152025">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1598969152025" />
     <state x="513" y="282" key="Github.ShareDialog" timestamp="1598283661869">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
     <state x="513" y="282" key="Github.ShareDialog/0.23.1280.721@0.23.1280.721" timestamp="1598283661869" />
     <state x="513" y="283" key="Github.ShareDialog/0.23.1280.724@0.23.1280.724" timestamp="1598282484965" />
     <state x="513" y="284" key="Github.ShareDialog/0.23.1280.726@0.23.1280.726" timestamp="1598273361638" />
-    <state width="1825" height="229" key="GridCell.Tab.0.bottom" timestamp="1598453041520">
+    <state width="1825" height="229" key="GridCell.Tab.0.bottom" timestamp="1598975072296">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597601371344" />
@@ -350,8 +359,8 @@
     <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1598288051339" />
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1825" height="229" key="GridCell.Tab.0.bottom/67.27.1853.948@67.27.1853.948" timestamp="1598453041520" />
-    <state width="1825" height="229" key="GridCell.Tab.0.center" timestamp="1598453041519">
+    <state width="1825" height="229" key="GridCell.Tab.0.bottom/67.27.1853.948@67.27.1853.948" timestamp="1598975072296" />
+    <state width="1825" height="229" key="GridCell.Tab.0.center" timestamp="1598975072295">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1597601371343" />
@@ -363,8 +372,8 @@
     <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1598288051338" />
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559414" />
-    <state width="1825" height="229" key="GridCell.Tab.0.center/67.27.1853.948@67.27.1853.948" timestamp="1598453041519" />
-    <state width="1825" height="229" key="GridCell.Tab.0.left" timestamp="1598453041518">
+    <state width="1825" height="229" key="GridCell.Tab.0.center/67.27.1853.948@67.27.1853.948" timestamp="1598975072295" />
+    <state width="1825" height="229" key="GridCell.Tab.0.left" timestamp="1598975072295">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1597601371343" />
@@ -376,8 +385,8 @@
     <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1598288051338" />
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559413" />
-    <state width="1825" height="229" key="GridCell.Tab.0.left/67.27.1853.948@67.27.1853.948" timestamp="1598453041518" />
-    <state width="1825" height="229" key="GridCell.Tab.0.right" timestamp="1598453041519">
+    <state width="1825" height="229" key="GridCell.Tab.0.left/67.27.1853.948@67.27.1853.948" timestamp="1598975072295" />
+    <state width="1825" height="229" key="GridCell.Tab.0.right" timestamp="1598975072296">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1597601371344" />
@@ -389,7 +398,7 @@
     <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1598288051339" />
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1825" height="229" key="GridCell.Tab.0.right/67.27.1853.948@67.27.1853.948" timestamp="1598453041519" />
+    <state width="1825" height="229" key="GridCell.Tab.0.right/67.27.1853.948@67.27.1853.948" timestamp="1598975072296" />
     <state width="1239" height="176" key="GridCell.Tab.1.bottom" timestamp="1598288051334">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -426,33 +435,33 @@
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="118" y="70" key="MergeDialog/0.23.1280.713@0.23.1280.713" timestamp="1597406262579" />
-    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1598451814714">
+    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1598969164503">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="130" y="23" width="997" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1598283536581" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1598272839664" />
-    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1598451814714" />
+    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1598969164503" />
     <state x="478" y="255" key="VCS.EditChangelistDialog" timestamp="1598283074798">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1598519876988">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1598519899901">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1598519876988" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1598519899901" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="630" height="343" key="XDebugger.FullValuePopup/0.23.1280.723@0.23.1280.723" timestamp="1596808055209" />
-    <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598451624781">
+    <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598885979787">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="418" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.713@0.23.1280.713" timestamp="1597406252697" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
-    <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.948@67.27.1853.948" timestamp="1598451624781" />
+    <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.948@67.27.1853.948" timestamp="1598885979787" />
     <state x="556" y="27" width="875" height="948" key="find.popup" timestamp="1598386897542">
       <screen x="67" y="27" width="1853" height="948" />
     </state>

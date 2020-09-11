@@ -5,7 +5,7 @@ from cortexio import CLIENT_SERVER_PROTOCOL, SERVER_SNAPSHOT_PATH
 import requests
 
 # TODO: delete import
-from cortexio import SAMPLE_PATH_MAC
+from cortexio import SAMPLE_PATH_MAC, SAMPLE_PATH_LINUX
 
 
 
@@ -19,4 +19,4 @@ def upload_sample(host, port, data_path):
             # TODO: handle bad response
 
 if __name__== "__main__":
-    upload_sample("127.0.0.1", 8080, SAMPLE_PATH_MAC)
+    upload_sample("127.0.0.1", 8080, SAMPLE_PATH_LINUX)
