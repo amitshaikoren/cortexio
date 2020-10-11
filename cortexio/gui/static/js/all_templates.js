@@ -9,3 +9,4 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.getElementById("main").style.opacity="1"
 }
+

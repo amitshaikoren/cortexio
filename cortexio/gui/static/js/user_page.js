@@ -24,3 +24,9 @@ function showDivs(n) {
   }
   z[slideIndex-1].style.display = "block";
 }
+
+
+async function getResults(apiURL, userID){
+
+}
+

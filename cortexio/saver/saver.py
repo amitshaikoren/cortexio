@@ -18,6 +18,7 @@ class Saver:
 
         if topic == "user":
             self.db.insert_user(deserialized_data)
+            print("inserted user data to db")
         else:
             self.db.insert_results(deserialized_data)
 
@@ -34,7 +35,7 @@ class Saver:
             thread = threading.Thread(target=self.run_saver, args=(parser, mq_url))
             thread.start()
 
-        # thread for user topic
+        #thread for user topic
         thread = threading.Thread(target=self.run_saver, args=("user", mq_url))
         thread.start()
 
