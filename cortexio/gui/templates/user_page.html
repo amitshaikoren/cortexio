@@ -69,6 +69,7 @@
   </script>
 </head>
 
+<body>
 <!-- Sidebar -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -87,13 +88,7 @@
     <div class="w3-content w3-display-container">
         <header><h1>COLOR IMAGE</h1></header>
 
-        {}
-        <div class="w3-display-container myColorImageSlides center">
-          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
-          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-            Northern Lights
-          </div>
-        </div>
+        <div id="snapshot_color_images"> </div>
 
 
         <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
@@ -105,19 +100,8 @@
 
     <div class="w3-content w3-display-container">
         <header><h1>DEPTH IMAGE</h1></header>
-        <div class="w3-display-container myDepthImageSlides center">
-          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
-          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-            French Alps
-          </div>
-        </div>
 
-        <div class="w3-display-container myDepthImageSlides center">
-          <img src="https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png" style="width:100%">
-          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-            Northern Lights
-          </div>
-        </div>
+        <div id="snapshot_depth_images"> </div>
 
         <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
@@ -129,7 +113,9 @@
 </div>
 
 <script>
-showDivs(slideIndex);
+addUserSnapshotImages("http://127.0.0.1:7000/", 42)
+showDivs(1);
+
 
 
 </script>

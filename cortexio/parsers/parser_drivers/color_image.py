@@ -40,7 +40,7 @@ class ColorImageParser:
         image_path.parent.mkdir(parents=True, exist_ok=True)
         image.save(image_path)
 
-        return dict(image_path=str(image_path), image_width=width, image_height=height)
+        return dict(data_path=str(image_path), image_width=width, image_height=height)
 
 
 

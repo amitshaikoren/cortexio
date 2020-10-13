@@ -57,7 +57,7 @@ class ParserManager:
 
 def parse(parser_name, data):
     parser = ParserManager(parser_name)
-    return parser.parse(data)
+    return json.loads(parser.parse(data))
 
 
 # TODO: move to somewhere that makes more sense: decouple parser manager from messageQ

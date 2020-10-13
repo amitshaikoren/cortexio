@@ -33,4 +33,4 @@ class MongoDatabase:
         return list(self.snapshots.find({'user_id': user_id}, {'_id': 0}))
 
     def get_snapshot_by_id(self, user_id, snapshot_id):
-        return self.snapshots.find_one({'user_id': user_id, 'snapshot_id': snapshot_id}, {'_id': 0})
+        return self.snapshots.find_one({'snapshot_id': snapshot_id, 'user_id': str(user_id)}, {'_id': 0})

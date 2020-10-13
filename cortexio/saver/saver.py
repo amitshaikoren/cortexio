@@ -18,7 +18,6 @@ class Saver:
 
         if topic == "user":
             self.db.insert_user(deserialized_data)
-            print("inserted user data to db")
         else:
             self.db.insert_results(deserialized_data)
 
