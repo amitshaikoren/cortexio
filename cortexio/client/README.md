@@ -4,7 +4,7 @@
 The client is available as brainstreamer.client and exposes the following API:
 
 ```pycon
->>> from brainstreamer.client import upload_sample
+>>> from cortexio.client import upload_sample
 >>> upload_sample(host= '127.0.0.1' , port= 8080 , sample_path= 'sample.mind.gz' )
 ```
 
