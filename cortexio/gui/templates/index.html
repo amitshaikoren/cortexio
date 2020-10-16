@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CortexIO</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="stylesheet">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../static/external_css/w3/w3.css">
 	<link rel="stylesheet" href="../static/external_css/font_awesome/css/font-awesome.min.css">
 	<link rel='stylesheet' type='text/css' href='../static/css/index.css'>
 	<link rel='stylesheet' type='text/css' href='../static/css/all_templates.css'>
+	<link rel='stylesheet' type='text/css' href='../static/css/card.css'>
 	<script src="../static/js/all_templates.js"></script>
+	<script src="../static/js/index.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		var apiURL = "{{api_url}}"
+		var guiURL = "{{gui_url}}"
+		getPageData();
+	</script>
+
+
 <style>
 
 </style>
@@ -17,10 +29,7 @@
 <!-- Sidebar -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="/">Home</a>
 </div>
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
@@ -28,171 +37,19 @@
 <div id="main">
 	<button class="w3-button w3-xlarge" onclick="openNav()">☰</button>
 	<div class="topnav">
-		<img src="../static/gui_images/logo.png" alt="logo" style="max-width: 50%">
-	  <input type="text" placeholder="Search..">
+
+		<div class="search-container">
+			<img src="../static/gui_images/logo.png" alt="logo" style="max-width: 50%">
+      		<input id="search" type="text" placeholder="Search.." name="search" onkeydown="enterSearch()">
+  		</div>
 	</div>
 
-
-
-  <div class="row">
-    <div class="column">
-	<article class="cssui-usercard">
-		<div class="cssui-usercard__body">
-			<header class="cssui-usercard__header">
-				<img src="https://stas-melnikov.ru/cliparts/stas.jpg" class="cssui-usercard__avatar" alt="Avatar">
-				<div class="cssui-usercard__header-info">
-					<h3 class="cssui-usercard__name">Stas <span class="cssui-usercard__name-label">Melnikov</span></h3>
-					<span class="cssui-usercard__post">UI Developer</span>
-				</div>
-			</header>
-			<div class="cssui-usercard__content">
-				<div class="cssui-slider">
-
-					<!-- the control elements of slider -->
-
-					<input id="slide1" type="radio" class="cssui-slider__switch cssui-usercard__switch" name="slider-controls" checked autofocus>
-					<label for="slide1" class="cssui-slider__control cssui-usercard__control"></label>
-					<input id="slide2" type="radio" class="cssui-slider__switch cssui-usercard__switch" name="slider-controls">
-					<label for="slide2" class="cssui-slider__control cssui-usercard__control"></label>
-					<input id="slide3" type="radio" class="cssui-slider__switch cssui-usercard__switch" name="slider-controls">
-					<label for="slide3" class="cssui-slider__control cssui-usercard__control"></label>
-
-					<div class="cssui-slider__slides">
-
-						<!-- first slide -->
-
-						<div class="cssui-slider__slide">
-							<h4 class="cssui-usercard__title">About me</h4>
-							<div class="cssui-usercard__stats">
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-earth"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">Language</span>
-										<span class="cssui-stats__value">English</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-location"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">Hometown</span>
-										<span class="cssui-stats__value">London</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-calendar"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">Date of birth</span>
-										<span class="cssui-stats__value">03 December 1990</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-man-woman"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">Relationship</span>
-										<span class="cssui-stats__value">Married</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- second slide -->
-
-						<div class="cssui-slider__slide">
-							<h4 class="cssui-usercard__title">My Skills</h4>
-							<div class="cssui-usercard__stats">
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-html"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">HTML</span>
-										<span class="cssui-stats__value">85%</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-vue"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">VUE</span>
-										<span class="cssui-stats__value">90%</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-angular"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">AngularJS</span>
-										<span class="cssui-stats__value">70%</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-js"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">NodeJS</span>
-										<span class="cssui-stats__value">82%</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- third slide -->
-
-						<div class="cssui-slider__slide">
-							<h4 class="cssui-usercard__title">My Contacts</h4>
-							<div class="cssui-usercard__stats">
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-email"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">E-mail</span>
-										<a href="#0" class="cssui-stats__value">text@gmail.com</a>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-phone"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">Phone</span>
-										<a href="tel:79000000000" class="cssui-stats__value">7-900-000-00-00</a>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-whatsapp"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">WhatsApp</span>
-										<span class="cssui-stats__value">+7 000 000-00-00</span>
-									</div>
-								</div>
-								<div class="cssui-stats cssui-usercard__stats-item">
-									<i class="cssui-icon icon-skype"></i>
-									<div class="cssui-stats__info cssui-usercard__stats-info">
-										<span class="cssui-stats__name cssui-usercard__stats-name">Skype</span>
-										<span class="cssui-stats__value">username</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer class="cssui-usercard__footer">
-          <a href="something" class="button3">Button</a>
-		</footer>
-	</article>
-    </div>
-
-      <div class="column">
-        <div class="card">
-
-        <header class="container">
-          <h2><b>Amit-Shai Koren</b></h2>
-          <p>Architect & Engineer</p>
-        </header>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-
 </div>
+
+<div id="cards"></div>
+
+
+
 
 <script>
 
