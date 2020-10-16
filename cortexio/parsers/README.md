@@ -28,10 +28,10 @@ The CLI should also support running the parsers as a service, which works with a
 ### Default available parsers
 
 The default implemented parsers in the project are:
-* [pose parser](parsing_drivers/pose.py)
-* [feeling parser](parsing_drivers/feelings.py)
-* [color-image parser](parsing_drivers/color_image.py)
-* [depth-image parser](parsing_drivers/depth_image.py)
+* [pose parser](parser_drivers/pose.py)
+* [feeling parser](parser_drivers/feelings.py)
+* [color-image parser](parser_drivers/color_image.py)
+* [depth-image parser](parser_drivers/depth_image.py)
 
 ### Package implementation
 
