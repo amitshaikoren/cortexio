@@ -5,6 +5,7 @@ import pathlib
 from cortexio import PARSER_MQ_PROTOCOL, BASE_SNAPSHOT_IMAGE_PATH
 import logging
 
+#TODO add logger for future implementations
 logger = logging.getLogger(__name__)
 
 serializer = ProtocolManager(PARSER_MQ_PROTOCOL)
@@ -27,7 +28,6 @@ class ColorImageParser:
         path = snapshot["color_image_path"]
         color_image_data_stream = FSM.load(path)
 
-        # TODO: is user_id really necessary to be included in the snapshot if we can use unique snapshot_id
         user_id = snapshot["user_id"]
         snapshot_id = snapshot["snapshot_id"]
 

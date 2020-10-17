@@ -1,7 +1,8 @@
-from cortexio.parsers import parser_manager
+from cortexio.parsers import parse, run_parsers
 import click
 from cortexio.utils import FileSystemManager as FSM
 from cortexio import PROJECT_NAME, DEFAULT_MESSAGEQ_URL
+import json
 
 
 @click.group()
@@ -15,7 +16,7 @@ def cli():
 def parse(parser_name, raw_data_path):
     try:
         raw_data = FSM.load(raw_data_path)
-        print(parser_manager.parse(parser_name, raw_data))
+        print(parse(parser_name, raw_data))
     except Exception as error:
         print(error)
 
@@ -25,14 +26,14 @@ def parse(parser_name, raw_data_path):
 @click.argument('mq_url', help="URL of dedicated message queue")
 def run_parser(parser_name, mq_url):
     try:
-        parser_manager.run_parsers(parser_name, mq_url)
+        run_parsers(parser_name, mq_url)
     except Exception as error:
         print(error)
 
 
 @cli.command()
 def run_parsers():
-    parser_manager.run_parsers(DEFAULT_MESSAGEQ_URL)
+    run_parsers(DEFAULT_MESSAGEQ_URL)
 
 
 if __name__ == '__main__':

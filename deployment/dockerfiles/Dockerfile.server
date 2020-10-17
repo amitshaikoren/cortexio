@@ -1,3 +1,0 @@
-FROM cortexio-base
-CMD ["python", "/cortexio/frontend/network/server/server.py"]
-

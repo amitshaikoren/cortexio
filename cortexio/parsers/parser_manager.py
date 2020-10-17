@@ -34,7 +34,7 @@ def _prepare_to_publish_data(topic, parsed_data, snapshot):
     metadata = dict(datetime=datetime, snapshot_id=snapshot_id, user_id=user_id)
     prepared_data = dict(**metadata, results={topic: parsed_data})
 
-    # TODO: change this json shit
+    # TODO: change this json shit to something more general in case protocol changes
     return json.dumps(prepared_data)
 
 
@@ -43,21 +43,14 @@ class ParserManager:
         self.parser_driver = drivers[parser_name]
 
     def parse(self, data):
-        try:
-            # TODO: not pretty
-            data = data.decode("utf-8")
             decoded_data = json.loads(data)
             parsed_data = self.parser_driver.parse(decoded_data)
-            encoded_data = json.dumps(parsed_data)
-            return encoded_data
-        # TODO: except relevant exception if data is not able to be decoded
-        except:
-            return self.parser_driver.parse(decoded_data)
+            return json.dumps(parsed_data)
 
 
 def parse(parser_name, data):
     parser = ParserManager(parser_name)
-    return json.loads(parser.parse(data))
+    return parser.parse(data)
 
 
 # TODO: move to somewhere that makes more sense: decouple parser manager from messageQ
@@ -65,7 +58,7 @@ def consume_publish_with_parser(parser_name, mq_url):
     mq = MessageQManager(mq_url)
 
     def handler(snapshot):
-        parsed_data = parse(parser_name, snapshot)
+        parsed_data = json.loads(parse(parser_name, snapshot))
         publishable_data = _prepare_to_publish_data(parser_name, parsed_data, snapshot)
         mq.publish(parser_name, publishable_data)
 

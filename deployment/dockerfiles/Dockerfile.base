@@ -1,5 +1,0 @@
-FROM python:3.8
-COPY ./deployment/requirements.txt /requirements.txt
-COPY ./cortexio /cortexio
-RUN pip install -r requirements.txt
-ENV PYTHONPATH "/"
