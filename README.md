@@ -1,6 +1,8 @@
 ## cortexio
  [![Build Status](https://travis-ci.com/amitshaikoren/cortexio.svg?branch=master)](https://travis-ci.org/amitshaikoren/cortexio)
+[![codecov](https://codecov.io/gh/amitshaikoren/cortexio/branch/master/graphs/badge.svg)](https://codecov.io/gh/amitshaikoren/cortexio)
 
+https://codecov.io/gh/amitshaikoren/cortexio/branch/master/graphs/badge.svg
 
 
 
