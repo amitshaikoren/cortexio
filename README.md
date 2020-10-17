@@ -1,5 +1,6 @@
 ## cortexio
  [![Build Status](https://travis-ci.com/amitshaikoren/cortexio.svg?branch=master)](https://travis-ci.org/amitshaikoren/cortexio)
+[![codecov](https://codecov.io/gh/amitshaikoren/cortexio/branch/master/graphs/badge.svg)](https://codecov.io/gh/amitshaikoren/cortexio)
 
 
 
@@ -31,7 +32,7 @@
 3. To check that everything is working as expected, run the tests:
 
     ```sh
-    [cortexio] $ pytest tests/
+    [cortexio] $ pytest
     ...
     ```
 ## Quickstart
@@ -57,7 +58,7 @@ After that, upload some snapshots from the [client](/cortexio/client/README.md).
 For usage of the mini-sample provided:
 
 ```sh
-[cortexio] $ python -m cortexio.client upload-sample ./cortexio/data/mini_sample.gz"
+[cortexio] $ python -m "cortexio.client upload-sample ./cortexio/data/mini_sample.gz"
 ...
 cortexio succeeded. All the 1 snapshots were uploaded!
 [cortexio] $ 
