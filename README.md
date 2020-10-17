@@ -1,5 +1,5 @@
 ## cortexio
-
+https://travis-ci.com/amitshaikoren/cortexio.svg?branch=master
 ## Prerequisites
 
 - [Python 3.8](https://www.python.org/downloads/release/python-382/)
