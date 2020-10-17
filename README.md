@@ -58,7 +58,7 @@ After that, upload some snapshots from the [client](/cortexio/client/README.md).
 For usage of the mini-sample provided:
 
 ```sh
-[cortexio] $ python -m "cortexio.client upload-sample ./cortexio/data/mini_sample.gz"
+[cortexio] $ python -m cortexio.client upload-sample "./cortexio/data/mini_sample.gz"
 ...
 cortexio succeeded. All the 1 snapshots were uploaded!
 [cortexio] $ 
