@@ -1,5 +1,5 @@
 ## cortexio
-[![Build Status](https://travis-ci.com/amitshaikoren/cortexio.svg?branch=master)](https://travis-ci.org/amitshaikoren/cortexio)
+ [![Build Status](https://travis-ci.com/amitshaikoren/cortexio.svg?branch=master)](https://travis-ci.org/amitshaikoren/cortexio)
 
 
 ## Prerequisites
