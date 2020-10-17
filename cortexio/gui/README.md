@@ -17,8 +17,8 @@ Usage as a python module:
 >>> from cortexio.gui import run_gui_server
 >>> run_gui_server(
 ... host = '0.0.0.0 ',
-... port = 8080 ,
-... api_url = '0.0.0.0:5000' ,
+... port = 9000 ,
+... api_url = '0.0.0.0:7000' ,
 ... )
 ```
 
@@ -27,6 +27,6 @@ Usage from CLI:
 ```pycon
 $ python -m cortexio.gui run_gui_server \
 -h/--host '0.0.0.0' \
--p/--port 8080 \
--H/--api_url '0.0.0.0:5000' \
+-p/--port 9000 \
+-H/--api_url '0.0.0.0:7000' \
 ```
