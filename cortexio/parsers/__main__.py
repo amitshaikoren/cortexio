@@ -11,8 +11,8 @@ def cli():
 
 
 @cli.command()
-@click.argument('parser_name', help="Parser to parse with")
-@click.argument('raw_data_path', help="Path to raw data to be parsed")
+@click.argument('parser_name')
+@click.argument('raw_data_path')
 def parse(parser_name, raw_data_path):
     try:
         raw_data = FSM.load(raw_data_path)
@@ -22,8 +22,8 @@ def parse(parser_name, raw_data_path):
 
 
 @cli.command()
-@click.argument('parser_name', help="Parser to run")
-@click.argument('mq_url', help="URL of dedicated message queue")
+@click.argument('parser_name')
+@click.argument('mq_url')
 def run_parser(parser_name, mq_url):
     try:
         run_parsers(parser_name, mq_url)

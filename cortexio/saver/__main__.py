@@ -11,7 +11,7 @@ def cli():
 
 @cli.command()
 @click.option('-d', '--database', default=DEFAULT_DATABASE_URL, help="Parser to parse with")
-@click.argument('raw_data_path', help="Path to raw data to be parsed")
+@click.argument('raw_data_path')
 def save(database_url, topic, raw_data_path):
     try:
         raw_data = FSM.load(raw_data_path)
@@ -21,7 +21,7 @@ def save(database_url, topic, raw_data_path):
 
 @cli.command()
 @click.option('-d', '--database', default=DEFAULT_DATABASE_URL, help="Parser to parse with")
-@click.argument('raw_data_path', help="Path to raw data to be parsed")
+@click.argument('raw_data_path')
 def run_saver(database_url, topic):
     try:
         saver.saver(database_url).run_saver(topic)

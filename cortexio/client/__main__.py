@@ -8,8 +8,8 @@ def cli():
 
 
 @cli.command()
-@click.option('-h', '--host', default='0.0.0.0',      help="Server host")
-@click.option('-p', '--port', default=8080,             help="Server port")
+@click.option('-h', '--host', default='0.0.0.0',    help="Server host")
+@click.option('-p', '--port', default=8080,         help="Server port")
 @click.argument('path')
 def upload_sample(host, port, path):
     try:
