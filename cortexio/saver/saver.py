@@ -40,5 +40,5 @@ class Saver:
 
 
 if __name__ == "__main__":
-    saver = Saver("mongodb://0.0.0.0:27017")
-    saver.run_all_savers("rabbitmq://0.0.0.0:5672/")
+    saver = Saver("mongodb://127.0.0.1:27017")
+    saver.run_all_savers("rabbitmq://127.0.0.1:5672/")
