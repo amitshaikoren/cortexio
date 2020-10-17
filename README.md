@@ -109,12 +109,12 @@ The project contains one main package, `cortexio`, which contains several sub-pa
 Each sub-package represents a micoservice of the project, which contains its own README file.<br>
 For examples and further read:
 
-* [`client`](/cortexiocortexiocortexiocortexio/client/README.md) - uploads snapshots to the server.
-* [`server`](/cortexiocortexiocortexio/server/README.md) - receives the snapshots from the client, processes and publishes them to the [`MQ`](/cortexio/platforms/message_queue).
-* [`parsers`](/cortexiocortexio/parsers/README.md) - consumes and parses the snapshots published by the server,and then publishing it back to the saver.
+* [`client`](/cortexio/client/README.md) - uploads snapshots to the server.
+* [`server`](/cortexio/server/README.md) - receives the snapshots from the client, processes and publishes them to the [`MQ`](/cortexio/platforms/message_queue).
+* [`parsers`](/cortexio/parsers/README.md) - consumes and parses the snapshots published by the server,and then publishing it back to the saver.
 * [`saver`](/cortexio/saver/README.md) - consumes and saves the parsed data to the database.
-* [`api`](/cortexiocortexiocortexio/server/README.md) - a REST API exposed to consume the data.
-* [`cli`](/cortexiocortexio/cli/README.md) - a CLI that consumes the API.
+* [`api`](/cortexio/server/README.md) - a REST API exposed to consume the data.
+* [`cli`](/cortexio/cli/README.md) - a CLI that consumes the API.
 * [`gui`](/cortexio/gui/README.md) - visualization of the data.
 * [`platforms`](/cortexio/platforms/README.md) - several platforms that provide services to all the components
 
