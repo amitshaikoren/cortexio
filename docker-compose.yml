@@ -1,0 +1,158 @@
+version: '3.3'
+
+services:
+  db:
+    image: mongo
+    restart: on-failure
+    networks:
+      - cortexio-net
+    ports:
+      - "27017:27017"
+    volumes:
+      - cortexio-data:/var/data/cortexio_data/db
+
+  mq:
+    image: rabbitmq
+    restart: on-failure
+    networks:
+      - cortexio-net
+    ports:
+      - "5672:5672"
+
+  base:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-base
+    image: cortexio-base:latest
+
+  server:
+    depends_on:
+      - mq
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-server
+    restart: on-failure
+    networks:
+      - cortexio-net
+    ports:
+      - "8080:8080"
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+      - ./cortexio/data:/cortexio/data
+
+  pose-parser:
+    depends_on:
+      - mq
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-parsers
+    restart: on-failure
+    networks:
+      - cortexio-net
+    environment:
+      - PARSER=pose
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+
+  feelings-parser:
+    depends_on:
+      - mq
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-parsers
+    restart: on-failure
+    networks:
+      - cortexio-net
+    environment:
+      - PARSER=feelings
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+
+  depth-image-parser:
+    depends_on:
+      - mq
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-parsers
+    restart: on-failure
+    networks:
+      - cortexio-net
+    environment:
+      - PARSER=depth_image
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+      - ./cortexio/data:/cortexio/data
+      - ./cortexio/gui:/cortexio/gui
+
+  color-image-parser:
+    depends_on:
+      - mq
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-parsers
+    restart: on-failure
+    networks:
+      - cortexio-net
+    environment:
+      - PARSER=color_image
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+      - ./cortexio/data:/cortexio/data
+      - ./cortexio/gui:/cortexio/gui
+
+  saver:
+    depends_on:
+      - mq
+      - db
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-saver
+    restart: on-failure
+    networks:
+      - cortexio-net
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+
+  api:
+    depends_on:
+      - db
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-api
+    restart: on-failure
+    networks:
+      - cortexio-net
+    ports:
+      - "7000:7000"
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+
+  gui:
+    depends_on:
+      - api
+      - base
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile-gui
+    restart: on-failure
+    networks:
+      - cortexio-net
+    ports:
+      - "9000:9000"
+    volumes:
+      - cortexio-data:/var/data/cortexio_data
+      - ./cortexio/gui:/cortexio/gui
+
+
+networks:
+  cortexio-net:
+
+volumes:
+  cortexio-data:

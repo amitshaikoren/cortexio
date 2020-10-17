@@ -1,0 +1,5 @@
+FROM cortexio-base
+
+ENV MQ_URL rabbitmq://mq:5672
+ENV DB_URL mongodb://db:27017
+CMD python -m cortexio.saver run-saver ${DB_URL} ${MQ_URL}

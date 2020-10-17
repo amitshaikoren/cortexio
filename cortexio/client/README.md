@@ -1,7 +1,7 @@
 
 ## Client
 
-The client is available as brainstreamer.client and exposes the following API:
+The client is available as cortexio.client and exposes the following API:
 
 ```pycon
 >>> from cortexio.client import upload_sample
