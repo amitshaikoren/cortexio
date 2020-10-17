@@ -23,7 +23,7 @@ to a file).
 
 The CLI should also support running the parsers as a service, which works with a message queue indefinitely.
 
-```$ python -m cortexio.parsers run-parser 'pose' 'rabbitmq://127.0.0.1:5672/' ```
+```$ python -m cortexio.parsers run-parser 'pose' 'rabbitmq://0.0.0.0:5672/' ```
 
 ### Default available parsers
 

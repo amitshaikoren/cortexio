@@ -7,6 +7,26 @@
   <component name="ChangeListManager">
     <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/api/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/cli/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/cli/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/definitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/gui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/gui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/gui/static/js/all_templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/static/js/all_templates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/parsers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/platforms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/saver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/server/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/server/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/run_servers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/run_servers.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +66,20 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/deployment/dockerfiles" />
-      <recent name="$PROJECT_DIR$/cortex8" />
-      <recent name="$PROJECT_DIR$/cortex8/frontend/network/client" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/deployment" />
       <recent name="$PROJECT_DIR$/test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cortexio" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/deployment/dockerfiles" />
+      <recent name="$PROJECT_DIR$/cortex8" />
+      <recent name="$PROJECT_DIR$/cortex8/frontend/network/client" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.gui">
+  <component name="RunManager" selected="Python.server">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,10 +258,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.server" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.client" />
-        <item itemvalue="Python.server" />
         <item itemvalue="Python.parser_manager" />
       </list>
     </recent_temporary>
@@ -348,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602945404711</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Final touches and code restructure">
+      <created>1602960573011</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602960573011</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +402,8 @@
     <MESSAGE value="finished gui" />
     <MESSAGE value="Added project tests" />
     <MESSAGE value="Deployment files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deployment files added" />
+    <MESSAGE value="Final touches and code restructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final touches and code restructure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -392,10 +421,10 @@
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="601" y="286" width="774" height="427" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.948@67.27.1853.948" timestamp="1602943131504" />
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602945404491">
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602960572058">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602945404491" />
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602960572058" />
     <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1602960142021">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
@@ -406,7 +435,7 @@
     <state x="513" y="282" key="Github.ShareDialog/0.23.1280.721@0.23.1280.721" timestamp="1598283661869" />
     <state x="513" y="283" key="Github.ShareDialog/0.23.1280.724@0.23.1280.724" timestamp="1598282484965" />
     <state x="513" y="284" key="Github.ShareDialog/0.23.1280.726@0.23.1280.726" timestamp="1598273361638" />
-    <state width="1825" height="230" key="GridCell.Tab.0.bottom" timestamp="1602943831785">
+    <state width="1825" height="230" key="GridCell.Tab.0.bottom" timestamp="1602964725950">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.710@0.23.1280.710" timestamp="1597601371344" />
@@ -418,8 +447,8 @@
     <state width="1259" height="165" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1598288051339" />
     <state width="1239" height="168" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1825" height="230" key="GridCell.Tab.0.bottom/67.27.1853.948@67.27.1853.948" timestamp="1602943831785" />
-    <state width="1825" height="230" key="GridCell.Tab.0.center" timestamp="1602943831785">
+    <state width="1825" height="230" key="GridCell.Tab.0.bottom/67.27.1853.948@67.27.1853.948" timestamp="1602964725950" />
+    <state width="1825" height="230" key="GridCell.Tab.0.center" timestamp="1602964725949">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.710@0.23.1280.710" timestamp="1597601371343" />
@@ -431,8 +460,8 @@
     <state width="1259" height="165" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1598288051338" />
     <state width="1239" height="168" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1596709559414" />
-    <state width="1825" height="230" key="GridCell.Tab.0.center/67.27.1853.948@67.27.1853.948" timestamp="1602943831785" />
-    <state width="1825" height="230" key="GridCell.Tab.0.left" timestamp="1602943831784">
+    <state width="1825" height="230" key="GridCell.Tab.0.center/67.27.1853.948@67.27.1853.948" timestamp="1602964725949" />
+    <state width="1825" height="230" key="GridCell.Tab.0.left" timestamp="1602964725948">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.710@0.23.1280.710" timestamp="1597601371343" />
@@ -444,8 +473,8 @@
     <state width="1259" height="165" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1598288051338" />
     <state width="1239" height="168" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1596809294237" />
     <state width="619" height="2" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1596709559413" />
-    <state width="1825" height="230" key="GridCell.Tab.0.left/67.27.1853.948@67.27.1853.948" timestamp="1602943831784" />
-    <state width="1825" height="230" key="GridCell.Tab.0.right" timestamp="1602943831785">
+    <state width="1825" height="230" key="GridCell.Tab.0.left/67.27.1853.948@67.27.1853.948" timestamp="1602964725948" />
+    <state width="1825" height="230" key="GridCell.Tab.0.right" timestamp="1602964725950">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.710@0.23.1280.710" timestamp="1597601371344" />
@@ -457,7 +486,7 @@
     <state width="1259" height="165" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1598288051339" />
     <state width="1239" height="168" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1596809294238" />
     <state width="619" height="2" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1596709559415" />
-    <state width="1825" height="230" key="GridCell.Tab.0.right/67.27.1853.948@67.27.1853.948" timestamp="1602943831785" />
+    <state width="1825" height="230" key="GridCell.Tab.0.right/67.27.1853.948@67.27.1853.948" timestamp="1602964725950" />
     <state width="1239" height="176" key="GridCell.Tab.1.bottom" timestamp="1598288051334">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -505,12 +534,12 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602945412005">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602960576965">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602945412005" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602960576965" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -533,11 +562,11 @@
     <state x="418" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.713@0.23.1280.713" timestamp="1597406252697" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
     <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.948@67.27.1853.948" timestamp="1598885979787" />
-    <state x="490" y="27" width="875" height="948" key="find.popup" timestamp="1602945151650">
+    <state x="490" y="27" width="875" height="948" key="find.popup" timestamp="1602964622250">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="338" y="23" width="604" height="726" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1598272446952" />
-    <state x="490" y="27" width="875" height="948" key="find.popup/67.27.1853.948@67.27.1853.948" timestamp="1602945151650" />
+    <state x="490" y="27" width="875" height="948" key="find.popup/67.27.1853.948@67.27.1853.948" timestamp="1602964622250" />
     <state x="447" y="247" key="git4idea.rebase.GitRebaseDialog" timestamp="1598282723623">
       <screen x="0" y="23" width="1280" height="721" />
     </state>

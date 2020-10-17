@@ -9,7 +9,7 @@ client_server_protocol = ProtocolManager(CLIENT_SERVER_PROTOCOL)
 
 def test_send_snapshot(data_dir, requests_post_data):
     sample = data_dir / 'snapshot.gz'
-    upload_sample('127.0.0.1', 12345, sample)
+    upload_sample('0.0.0.0', 12345, sample)
 
     message = requests_post_data[0]
     user, snapshot = client_server_protocol.deserialize(message)

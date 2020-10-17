@@ -55,7 +55,7 @@ For example, rabbit_mq driver would look like:
 And to use a message queue of type rabbitMQ:
 ```pycon
 >>> from cortexio.platforms import MqWrapper
->>> url = 'rabbitmq://127.0.0.1:5672/'
+>>> url = 'rabbitmq://0.0.0.0:5672/'
 >>> mq = MqWrapper(url)
 >>> mq.publish(topic, message) # publish a given message on a given topic
 ``` 

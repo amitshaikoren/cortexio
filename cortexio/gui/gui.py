@@ -39,4 +39,4 @@ def favicon():
 
 
 if __name__ == "__main__":
-    run_gui_server("127.0.0.1", 9000, DEFAULT_API_URL)
+    run_gui_server("0.0.0.0", 9000, DEFAULT_API_URL)

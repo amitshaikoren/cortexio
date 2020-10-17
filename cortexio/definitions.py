@@ -29,10 +29,10 @@ SERVER_PARSER_SHARED_DATA_DIR = PROJECT_ROOT_DIR / PROJECT_NAME / 'data' / 'shar
 #######################
 # URLS
 #######################
-DEFAULT_MESSAGEQ_URL = "rabbitmq://127.0.0.1:5672/"
-DEFAULT_DATABASE_URL = "mongodb://127.0.0.1:27017"
-DEFAULT_API_URL = "http://127.0.0.1:7000/"
-DEFAULT_GUI_URL = "http://127.0.0.1:9000/"
+DEFAULT_MESSAGEQ_URL = "rabbitmq://0.0.0.0:5672/"
+DEFAULT_DATABASE_URL = "mongodb://0.0.0.0:27017"
+DEFAULT_API_URL = "http://0.0.0.0:7000/"
+DEFAULT_GUI_URL = "http://0.0.0.0:9000/"
 
 #######################
 # LOCAL TESTS PRE PRODUCTION

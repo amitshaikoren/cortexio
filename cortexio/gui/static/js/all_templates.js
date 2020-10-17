@@ -10,4 +10,4 @@ function closeNav() {
   document.getElementById("main").style.opacity="1"
 }
 
-var apiURL = "http://127.0.0.1:7000";
+var apiURL = "http://0.0.0.0:7000";

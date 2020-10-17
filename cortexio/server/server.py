@@ -13,7 +13,7 @@ url = None
 handler = None
 
 # TODO: replace url argument with optional cli argument, for now its just for testing
-def run_server(host, port, publish=None, mq_url="rabbitmq://127.0.0.1:5672/"):
+def run_server(host, port, publish=None, mq_url="rabbitmq://0.0.0.0:5672/"):
     if publish:
         global handler
         handler = publish
@@ -62,4 +62,4 @@ def post_snapshot():
     return ""
 
 if __name__ == "__main__":
-    run_server("127.0.0.1", 8080)
+    run_server("0.0.0.0", 8080)

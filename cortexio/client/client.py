@@ -19,4 +19,4 @@ def upload_sample(host, port, data_path):
             # TODO: handle bad response
 
 if __name__== "__main__":
-    upload_sample("127.0.0.1", 8080, SAMPLE_PATH_LINUX)
+    upload_sample("0.0.0.0", 8080, SAMPLE_PATH_LINUX)

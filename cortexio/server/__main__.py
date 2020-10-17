@@ -8,7 +8,7 @@ def cli():
 
 
 @cli.command()
-@click.option('-h', '--host', default='127.0.0.1',      help="Server host")
+@click.option('-h', '--host', default='0.0.0.0',      help="Server host")
 @click.option('-p', '--port', default=8080,             help="Server port")
 @click.argument('mq_url',   help="Path to message queue")
 def run_server(host, port, mq_url):

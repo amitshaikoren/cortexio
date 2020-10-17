@@ -65,4 +65,4 @@ def get_snapshot_result_data(user_id, snapshot_id, result_name):
 
 
 if __name__ == "__main__":
-    run_api_server("127.0.0.1", 7000, DEFAULT_DATABASE_URL)
+    run_api_server("0.0.0.0", 7000, DEFAULT_DATABASE_URL)
