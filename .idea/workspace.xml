@@ -6,30 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/mini_sample.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/install.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/run-pipeline.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/run_client.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/run_dockers.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/run_servers.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/stop-pipeline.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/client/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/server/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/dockerfiles/Dockerfile-api" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/dockerfiles/Dockerfile-base" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-base" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/dockerfiles/Dockerfile-gui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/dockerfiles/Dockerfile-parsers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/dockerfiles/Dockerfile-saver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/dockerfiles/Dockerfile-server" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -364,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602942673970</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Deployment files added">
+      <created>1602945404711</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602945404711</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,7 +373,8 @@
     <MESSAGE value="Edited GUI files" />
     <MESSAGE value="finished gui" />
     <MESSAGE value="Added project tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added project tests" />
+    <MESSAGE value="Deployment files added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deployment files added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -407,14 +392,14 @@
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="601" y="286" width="774" height="427" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.948@67.27.1853.948" timestamp="1602943131504" />
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602942673432">
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602945404491">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602942673432" />
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1602932041855">
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602945404491" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1602960142021">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1602932041855" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1602960142021" />
     <state x="513" y="282" key="Github.ShareDialog" timestamp="1598283661869">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -509,23 +494,23 @@
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="118" y="70" key="MergeDialog/0.23.1280.713@0.23.1280.713" timestamp="1597406262579" />
-    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1602944104349">
+    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1602960279052">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="130" y="23" width="997" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1598283536581" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1598272839664" />
-    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1602944104349" />
+    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1602960279052" />
     <state x="478" y="255" key="VCS.EditChangelistDialog" timestamp="1598283074798">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602944862736">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602945412005">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602944862736" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602945412005" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -538,6 +523,10 @@
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="463" y="27" width="1050" height="948" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.948@67.27.1853.948" timestamp="1602443711642" />
+    <state x="740" y="175" width="496" height="649" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1602945303238">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="740" y="175" width="496" height="649" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/67.27.1853.948@67.27.1853.948" timestamp="1602945303238" />
     <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598885979787">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
