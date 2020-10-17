@@ -32,7 +32,7 @@
 3. To check that everything is working as expected, run the tests:
 
     ```sh
-    [cortexio] $ pytest tests/
+    [cortexio] $ pytest
     ...
     ```
 ## Quickstart
