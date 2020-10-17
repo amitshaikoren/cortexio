@@ -9,7 +9,7 @@ def cli():
 @cli.command()
 @click.option('-h', '--host',      default='0.0.0.0'  , help="server host")
 @click.option('-p', '--port',      default='9000'       , help="server port")
-@click.option('-H', '--api_host',  default='0.0.0.0'  , help="API Host")
+@click.option('-H', '--api_host',  default='127.0.0.1'  , help="API Host")
 @click.option('-P', '--api_port',  default='7000'       , help="API port")
 def run_server(host,port, api_host, api_port):
     formatted_api_address = f"http://{api_host}:{api_port}";
