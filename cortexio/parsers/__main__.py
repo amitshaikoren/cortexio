@@ -1,8 +1,7 @@
-from cortexio.parsers import parse, run_parsers
+from cortexio.parsers import parse, run_parsers, consume_publish_with_parser
 import click
 from cortexio.utils import FileSystemManager as FSM
-from cortexio import PROJECT_NAME, DEFAULT_MESSAGEQ_URL
-import json
+from cortexio import DEFAULT_MESSAGEQ_URL
 
 
 @click.group()
@@ -26,7 +25,7 @@ def parse(parser_name, raw_data_path):
 @click.argument('mq_url')
 def run_parser(parser_name, mq_url):
     try:
-        run_parsers(parser_name, mq_url)
+        consume_publish_with_parser(parser_name, mq_url)
     except Exception as error:
         print(error)
 
@@ -37,5 +36,5 @@ def run_parsers():
 
 
 if __name__ == '__main__':
-    cli(prog_name=PROJECT_NAME)
+    cli(prog_name="parsers")
 

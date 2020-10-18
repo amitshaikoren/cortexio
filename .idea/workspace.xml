@@ -5,10 +5,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cortexio/definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/definitions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/gui/static/js/all_templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/static/js/all_templates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/saver.py" afterDir="false" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="changed relevant 0.0.0.0">
+      <change afterPath="$PROJECT_DIR$/cortexio/api/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/parsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/saver/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +49,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cortexio/gui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cortexio/api" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cortexio/gui" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/deployment" />
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cortexio" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/deployment/dockerfiles" />
       <recent name="$PROJECT_DIR$/cortex8" />
       <recent name="$PROJECT_DIR$/cortex8/frontend/network/client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cortexio/api" />
+      <recent name="$PROJECT_DIR$/cortexio/gui" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/deployment" />
+      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
   <component name="RunManager" selected="Python.server">
@@ -387,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602970422899</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="changed relevant 0.0.0.0">
+      <created>1602970762814</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602970762814</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +429,8 @@
     <MESSAGE value="Final touches and code restructure" />
     <MESSAGE value="Added GUI __init__.py and __main__.py files" />
     <MESSAGE value="Fixed connection bugs and click help bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed connection bugs and click help bugs" />
+    <MESSAGE value="changed relevant 0.0.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed relevant 0.0.0.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -434,14 +448,14 @@
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="601" y="286" width="774" height="427" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.948@67.27.1853.948" timestamp="1602943131504" />
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602970422709">
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602971636995">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602970422709" />
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1602960142021">
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602971636995" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1603045747588">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1602960142021" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1603045747588" />
     <state x="513" y="282" key="Github.ShareDialog" timestamp="1598283661869">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -536,23 +550,23 @@
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="118" y="70" key="MergeDialog/0.23.1280.713@0.23.1280.713" timestamp="1597406262579" />
-    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1602960279052">
+    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1603045792175">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="130" y="23" width="997" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1598283536581" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1598272839664" />
-    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1602960279052" />
+    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1603045792175" />
     <state x="478" y="255" key="VCS.EditChangelistDialog" timestamp="1598283074798">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602970425431">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602971640224">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602970425431" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602971640224" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -575,11 +589,11 @@
     <state x="418" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.713@0.23.1280.713" timestamp="1597406252697" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
     <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.948@67.27.1853.948" timestamp="1598885979787" />
-    <state x="490" y="27" width="875" height="948" key="find.popup" timestamp="1602970601964">
+    <state x="490" y="27" width="875" height="948" key="find.popup" timestamp="1602972042315">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="338" y="23" width="604" height="726" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1598272446952" />
-    <state x="490" y="27" width="875" height="948" key="find.popup/67.27.1853.948@67.27.1853.948" timestamp="1602970601964" />
+    <state x="490" y="27" width="875" height="948" key="find.popup/67.27.1853.948@67.27.1853.948" timestamp="1602972042315" />
     <state x="447" y="247" key="git4idea.rebase.GitRebaseDialog" timestamp="1598282723623">
       <screen x="0" y="23" width="1280" height="721" />
     </state>

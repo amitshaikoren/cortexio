@@ -1,7 +1,6 @@
-from cortexio.saver import saver
+from cortexio.saver import Saver
 import click
-from cortexio.utils import FileSystemManager as FSM
-from cortexio import PROJECT_NAME, DEFAULT_DATABASE_URL
+from cortexio import DEFAULT_DATABASE_URL
 
 
 @click.group()
@@ -10,24 +9,22 @@ def cli():
 
 
 @cli.command()
-@click.option('-d', '--database', default=DEFAULT_DATABASE_URL, help="Parser to parse with")
-@click.argument('raw_data_path')
-def save(database_url, topic, raw_data_path):
-    try:
-        raw_data = FSM.load(raw_data_path)
-        saver.saver(database_url).save(topic, raw_data)
-    except Exception as error:
-        print(error)
+@click.option('-d', '--database', default=DEFAULT_DATABASE_URL)
+@click.argument('topic')
+@click.argument('input_path')
+def save(database, topic, input_path):
+    saver = Saver(database)
+    with open(input_path, 'r') as f:
+        saver.save(topic, f.read())
+
 
 @cli.command()
-@click.option('-d', '--database', default=DEFAULT_DATABASE_URL, help="Parser to parse with")
-@click.argument('raw_data_path')
-def run_saver(database_url, topic):
-    try:
-        saver.saver(database_url).run_saver(topic)
-    except Exception as error:
-        print(error)
+@click.argument('db_url')
+@click.argument('mq_url')
+def run_saver(db_url, mq_url):
+    saver = Saver(db_url)
+    saver.run_savers(mq_url)
 
 
 if __name__ == '__main__':
-    cli(prog_name=PROJECT_NAME)
+    cli(prog_name='saver')
