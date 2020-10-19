@@ -6,27 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-indirection" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/api/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/utils/reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/client/utils/reader_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/utils/reader_drivers/protobuf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/gui/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/gui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/parsers/parser_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/parser_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/platforms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/platforms/databases/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/databases/database_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/platforms/messageQ/messageQ_drivers/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/platforms/messageQ/messageQ_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/messageQ/messageQ_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/platforms/protocols/protocol_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/protocols/protocol_drivers/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/saver/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/saver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/server/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +67,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.server">
+  <component name="RunManager" selected="Docker.docker-compose.yml.color-image-parser: Compose Deployment">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,27 +152,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="parser_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cortex8" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cortexio/parsers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cortexio/parsers/parser_manager.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cortex8" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,6 +182,19 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.color-image-parser: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="color-image-parser" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -254,18 +231,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.client" />
-      <item itemvalue="Python.parser_manager" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python.api" />
       <item itemvalue="Python.gui" />
+      <item itemvalue="Docker.docker-compose.yml.color-image-parser: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.color-image-parser: Compose Deployment" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.gui" />
         <item itemvalue="Python.api" />
         <item itemvalue="Python.client" />
-        <item itemvalue="Python.parser_manager" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603046791527</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updated CLI">
+      <created>1603126206652</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603126206652</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,7 +436,8 @@
     <MESSAGE value="Fixed connection bugs and click help bugs" />
     <MESSAGE value="changed relevant 0.0.0.0" />
     <MESSAGE value="Fixed CLI of each module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed CLI of each module" />
+    <MESSAGE value="Updated CLI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated CLI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -474,10 +459,10 @@
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="673" y="322" width="630" height="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.948@67.27.1853.948" timestamp="1603050031108" />
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1603046791173">
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1603126206140">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1603046791173" />
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1603126206140" />
     <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1603121620781">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
@@ -587,12 +572,12 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1603046797394">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1603126209622">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1603046797394" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1603126209622" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
