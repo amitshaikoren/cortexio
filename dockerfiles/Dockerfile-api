@@ -2,5 +2,5 @@ from cortexio-base
 
 ENV HOST 0.0.0.0
 ENV PORT 7000
-ENV DB_URL mongodb://db:27017
+ENV DB_URL mongodb://127.0.0.1:27017
 CMD python -m cortexio.api run-server -h ${HOST} -p ${PORT} -d ${DB_URL}

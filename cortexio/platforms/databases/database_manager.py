@@ -32,6 +32,3 @@ class DatabaseManager:
     def get_snapshot_by_id(self, user_id, snapshot_id):
         return self.db.get_snapshot_by_id(user_id, snapshot_id)
 
-
-if __name__ == "__main__":
-    db = DatabaseManager()

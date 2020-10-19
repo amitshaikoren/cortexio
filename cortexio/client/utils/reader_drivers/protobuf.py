@@ -46,13 +46,3 @@ class ProtobufReader:
             return snapshot
         except struct.error:
             return None
-
-# TODO: delete
-#if __name__ == "__main__":
- #   with ProtobufReader(abs_path_linux) as pbr:
- #       client_server_protocol = ProtocolManager("protobuf")
-  #      user = pbr.get_user()
-  #      snapshot = pbr.get_snapshot()
-  #      print(client_server_protocol.convert_to_python_dict(user, snapshot))
-
-

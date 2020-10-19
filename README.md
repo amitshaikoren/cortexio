@@ -114,7 +114,7 @@ Each sub-package represents a micoservice of the project, which contains its own
 For examples and further read:
 
 * [`client`](/cortexio/client/README.md) - uploads snapshots to the server.
-* [`server`](/cortexio/server/README.md) - receives the snapshots from the client, processes and publishes them to the [`MQ`](/cortexio/platforms/message_queue).
+* [`server`](/cortexio/server/README.md) - receives the snapshots from the client, processes and publishes them to the [`MQ`](/cortexio/platforms/messageQ).
 * [`parsers`](/cortexio/parsers/README.md) - consumes and parses the snapshots published by the server,and then publishing it back to the saver.
 * [`saver`](/cortexio/saver/README.md) - consumes and saves the parsed data to the database.
 * [`api`](/cortexio/server/README.md) - a REST API exposed to consume the data.

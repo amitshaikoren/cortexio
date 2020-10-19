@@ -5,15 +5,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="changed relevant 0.0.0.0">
-      <change afterPath="$PROJECT_DIR$/cortexio/api/__main__.py" afterDir="false" />
+    <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-indirection" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cortexio/parsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/api/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/utils/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/utils/reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/client/utils/reader_drivers/protobuf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/client/utils/reader_drivers/protobuf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/gui/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/gui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/gui/gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortexio/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/parsers/parser_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/parsers/parser_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/platforms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/platforms/databases/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/databases/database_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/platforms/messageQ/messageQ_drivers/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/platforms/messageQ/messageQ_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/messageQ/messageQ_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/platforms/protocols/protocol_drivers/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/platforms/protocols/protocol_drivers/json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cortexio/saver/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/saver/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cortexio/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/cortexio/server/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +62,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cortexio/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -400,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602970762814</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixed CLI of each module">
+      <created>1603046791527</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603046791527</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +451,8 @@
     <MESSAGE value="Added GUI __init__.py and __main__.py files" />
     <MESSAGE value="Fixed connection bugs and click help bugs" />
     <MESSAGE value="changed relevant 0.0.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed relevant 0.0.0.0" />
+    <MESSAGE value="Fixed CLI of each module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed CLI of each module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -444,18 +466,22 @@
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1596360379131" />
     <state x="94" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.724@0.23.1280.724" timestamp="1598272730664" />
     <state x="203" y="52" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.948@67.27.1853.948" timestamp="1598386563877" />
-    <state x="601" y="286" width="774" height="427" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602943131504">
+    <state x="601" y="286" width="813" height="427" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603125944669">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="601" y="286" width="774" height="427" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.948@67.27.1853.948" timestamp="1602943131504" />
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1602971636995">
+    <state x="601" y="286" width="813" height="427" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.948@67.27.1853.948" timestamp="1603125944669" />
+    <state x="673" y="322" width="630" height="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603050031108">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1602971636995" />
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1603045747588">
+    <state x="673" y="322" width="630" height="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.948@67.27.1853.948" timestamp="1603050031108" />
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1603046791173">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1603045747588" />
+    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1603046791173" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1603121620781">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1603121620781" />
     <state x="513" y="282" key="Github.ShareDialog" timestamp="1598283661869">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -550,23 +576,23 @@
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="118" y="70" key="MergeDialog/0.23.1280.713@0.23.1280.713" timestamp="1597406262579" />
-    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1603045792175">
+    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1603121731023">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="130" y="23" width="997" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1598283536581" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1598272839664" />
-    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1603045792175" />
+    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1603121731023" />
     <state x="478" y="255" key="VCS.EditChangelistDialog" timestamp="1598283074798">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1602971640224">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1603046797394">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1602971640224" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1603046797394" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -589,11 +615,11 @@
     <state x="418" y="297" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.713@0.23.1280.713" timestamp="1597406252697" />
     <state x="418" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.723@0.23.1280.723" timestamp="1596358694366" />
     <state x="672" y="391" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.948@67.27.1853.948" timestamp="1598885979787" />
-    <state x="490" y="27" width="875" height="948" key="find.popup" timestamp="1602972042315">
+    <state x="490" y="27" width="875" height="948" key="find.popup" timestamp="1603050224878">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="338" y="23" width="604" height="726" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1598272446952" />
-    <state x="490" y="27" width="875" height="948" key="find.popup/67.27.1853.948@67.27.1853.948" timestamp="1602972042315" />
+    <state x="490" y="27" width="875" height="948" key="find.popup/67.27.1853.948@67.27.1853.948" timestamp="1603050224878" />
     <state x="447" y="247" key="git4idea.rebase.GitRebaseDialog" timestamp="1598282723623">
       <screen x="0" y="23" width="1280" height="721" />
     </state>

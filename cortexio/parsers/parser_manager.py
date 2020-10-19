@@ -65,18 +65,14 @@ def consume_publish_with_parser(parser_name, mq_url):
     mq.consume('snapshot', handler)
 
 
-def run_parsers():
+def run_parsers(mq_url):
     for parser in parsers:
-        t = threading.Thread(target=consume_publish_with_parser, args=(parser, DEFAULT_MESSAGEQ_URL))
+        t = threading.Thread(target=consume_publish_with_parser, args=(parser, mq_url))
         t.start()
 
 
-
-if __name__ == "__main__":
-    run_parsers()
 
 
 
 # TODO: PROBLEM with messageQ: if message was sent and handler failed
 #       then message is lost and has to be sent again by client.
-#       For some reason, parser has to be running before message is sent by client... weird.

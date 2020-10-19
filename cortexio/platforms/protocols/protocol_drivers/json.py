@@ -5,7 +5,7 @@ class JSONProtocol:
     scheme = "json"
 
     # TODO: make this stupid function be able to take as many arguments as it wants and convert it to json
-    def serialize(self, user_dict, snapshot_dict, raw_data):
+    def serialize(self, user_dict, snapshot_dict, raw_data=None):
         if user_dict is not None and snapshot_dict is not None:
             serialized_user_dict = json.dumps(user_dict)
             serialized_snapshot_dict = json.dumps(snapshot_dict)

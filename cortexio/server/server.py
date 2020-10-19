@@ -60,6 +60,3 @@ def post_snapshot():
 
     # TODO: return viable template
     return ""
-
-if __name__ == "__main__":
-    run_server("0.0.0.0", 8080)

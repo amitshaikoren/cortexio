@@ -38,5 +38,3 @@ def favicon():
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
-if __name__ == "__main__":
-    run_gui_server("0.0.0.0", 9000, DEFAULT_API_URL)

@@ -19,7 +19,3 @@ class MessageQManager:
 
     def consume(self, topic, handler):
         self.driver.consume(topic, handler)
-
-if __name__ == "__main__":
-    drivers = load_drivers("messageQ_drivers")
-    print(drivers)

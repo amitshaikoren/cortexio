@@ -30,11 +30,3 @@ class Reader:
         while snapshot := self.reader.get_snapshot():
             yield snapshot
 
-# TODO: delte
-if __name__ == "__main__":
-    with Reader(SAMPLE_PATH_MAC) as pbr:
-        client_server_protocol = ProtocolManager(CLIENT_SERVER_PROTOCOL)
-        user = pbr.get_user()
-        snapshot = pbr.get_snapshot()
-        print(client_server_protocol.convert_to_python_dict(user, snapshot))
-
