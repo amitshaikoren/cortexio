@@ -7,11 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8bfd6895-7872-4fdd-bacb-84b04c5cd038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-gui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-base" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-base" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-parsers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-saver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/Dockerfile-server" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,11 +228,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.color-image-parser: Compose Deployment" />
       <item itemvalue="Python.client" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python.api" />
       <item itemvalue="Python.gui" />
-      <item itemvalue="Docker.docker-compose.yml.color-image-parser: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
@@ -405,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603126206652</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated dockerfiles to include copy cortexio cortexio">
+      <created>1603134611294</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603134611294</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +442,8 @@
     <MESSAGE value="changed relevant 0.0.0.0" />
     <MESSAGE value="Fixed CLI of each module" />
     <MESSAGE value="Updated CLI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated CLI" />
+    <MESSAGE value="Updated dockerfiles to include copy cortexio cortexio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated dockerfiles to include copy cortexio cortexio" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="322" width="741" height="412" key="#Notifications" timestamp="1598386767007">
@@ -459,14 +465,18 @@
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="673" y="322" width="630" height="355" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1853.948@67.27.1853.948" timestamp="1603050031108" />
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1603126206140">
+    <state x="378" y="27" width="1096" height="948" key="CommitChangelistDialog2" timestamp="1603134611083">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="386" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1603126206140" />
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1603121620781">
+    <state x="378" y="27" width="1096" height="948" key="CommitChangelistDialog2/67.27.1853.948@67.27.1853.948" timestamp="1603134611083" />
+    <state x="167" y="125" width="1653" height="750" key="DiffContextDialog" timestamp="1603563847914">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1603121620781" />
+    <state x="167" y="125" width="1653" height="750" key="DiffContextDialog/67.27.1853.948@67.27.1853.948" timestamp="1603563847914" />
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl" timestamp="1603563482518">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="702" y="202" width="594" height="598" key="FileChooserDialogImpl/67.27.1853.948@67.27.1853.948" timestamp="1603563482518" />
     <state x="513" y="282" key="Github.ShareDialog" timestamp="1598283661869">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
@@ -561,31 +571,35 @@
       <screen x="0" y="23" width="1280" height="713" />
     </state>
     <state x="118" y="70" key="MergeDialog/0.23.1280.713@0.23.1280.713" timestamp="1597406262579" />
-    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1603121731023">
+    <state x="255" y="27" width="997" height="721" key="SettingsEditor" timestamp="1603563518887">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="130" y="23" width="997" height="721" key="SettingsEditor/0.23.1280.721@0.23.1280.721" timestamp="1598283536581" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1596360359106" />
     <state x="130" y="23" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1598272839664" />
-    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1603121731023" />
+    <state x="255" y="27" key="SettingsEditor/67.27.1853.948@67.27.1853.948" timestamp="1603563518887" />
     <state x="478" y="255" key="VCS.EditChangelistDialog" timestamp="1598283074798">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="478" y="255" key="VCS.EditChangelistDialog/0.23.1280.723@0.23.1280.723" timestamp="1598283074798" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1603126209622">
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1603134613695">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
     <state x="230" y="119" key="Vcs.Push.Dialog.v2/0.23.1280.716@0.23.1280.716" timestamp="1597839794832" />
     <state x="230" y="120" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1596359333725" />
-    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1603126209622" />
+    <state x="400" y="154" width="1000" height="654" key="Vcs.Push.Dialog.v2/67.27.1853.948@67.27.1853.948" timestamp="1603134613695" />
+    <state x="757" y="175" width="462" height="649" key="VcsDiffUtil.ChangesDialog" timestamp="1603563797681">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="757" y="175" width="462" height="649" key="VcsDiffUtil.ChangesDialog/67.27.1853.948@67.27.1853.948" timestamp="1603563797681" />
     <state width="630" height="343" key="XDebugger.FullValuePopup" timestamp="1596808055209">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state width="630" height="343" key="XDebugger.FullValuePopup/0.23.1280.723@0.23.1280.723" timestamp="1596808055209" />
-    <state x="167" y="123" width="1653" height="750" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602943350507">
+    <state x="167" y="123" width="1653" height="750" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603563847915">
       <screen x="67" y="27" width="1853" height="948" />
     </state>
-    <state x="167" y="123" width="1653" height="750" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.948@67.27.1853.948" timestamp="1602943350507" />
+    <state x="167" y="123" width="1653" height="750" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.948@67.27.1853.948" timestamp="1603563847915" />
     <state x="463" y="27" width="1050" height="948" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602443711642">
       <screen x="67" y="27" width="1853" height="948" />
     </state>

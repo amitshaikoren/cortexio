@@ -1,5 +1,10 @@
 FROM cortexio-base
 COPY cortexio cortexio
 
-ENV MQ_URL rabbitmq://127.0.0.1:5672
+ARG PARSER_ARG
+ARG MQ_URL_ARG
+ENV MQ_URL=${PARSER_ARG}
+ENV PARSER=${MQ_URL_ARG}
+
+
 CMD python -m cortexio.parsers run-parser ${PARSER} ${MQ_URL}
