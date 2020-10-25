@@ -36,8 +36,8 @@ The default implemented parsers in the project are:
 ### Package implementation
 
 The parsers package structure is the same as any other [platform](../platforms/README.md).
-It consists of a ```parsing_manager.py``` file, that gathers all the common logic for the parsers and manages the communication with the message queue. <br>
-It also consists of a drivers folder called ``` parsing_drivers ``` which contains all the available parsers.  
+It consists of a ```parser_manager.py``` file, that gathers all the common logic for the parsers and manages the communication with the message queue. <br>
+It also consists of a drivers folder called ``` parser_drivers ``` which contains all the available parsers.  
 
 
 ### Adding a new parser
