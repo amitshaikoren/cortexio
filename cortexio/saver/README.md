@@ -17,7 +17,7 @@ It is also provides the following CLI:
 
 ```pycon
 $ python -m cortexio.saver save \
--d/--database 'postgresql://0.0.0.0:27017' \
+-d/--database 'mongodb://127.0.0.1:27017' \
 'pose' \
 'pose.result'
 ```
@@ -30,6 +30,6 @@ indefinitely.
 
 ```pycon
 $ python -m cortexio.saver run-saver \
-'mongoDB://0.0.0.0:27017' \
-'rabbitmq://0.0.0.0:5672/'
+'mongodb://127.0.0.1:27017' \
+'rabbitmq://127.0.0.1:5672/'
 ```
