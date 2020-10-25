@@ -18,7 +18,7 @@ And the following CLI:
 python -m cortexio.api run-server \
 -h/--host '0.0.0.0' \
 -p/--port 7000 \
--d/--database 'postgresql://0.0.0.0:27017'
+-d/--database 'mongodb://0.0.0.0:27017'
 ```
 
 The API server supports the following RESTful API endpoints:
