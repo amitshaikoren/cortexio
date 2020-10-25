@@ -5,9 +5,9 @@ The API is available as cortexio.api and expose the following API:
 ```pycon
 >>> from cortexio.api import run_api_server
 >>> run_api_server(
-... host = "http://0.0.0.0/" ,
+... host = "0.0.0.0" ,
 ... port = 7000 ,
-... database_url = "mongodb://0.0.0.0:27017" ,
+... database_url = "mongodb://127.0.0.1:27017" ,
 ... )
 … # listen on host : port and serve data from database_url
 ```
