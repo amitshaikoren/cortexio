@@ -42,21 +42,18 @@ It also consists of a drivers folder called ``` parser_drivers ``` which contain
 
 ### Adding a new parser
 
-Adding a new parser would be quite simple: just add a new .py file under the  ``` parsing_drivers ``` folder,
-and implement a function that accepts as an argument a snapshot, uses json to load it, process it and then returns a dictionary of the results. <br>
-You will also required to add a function attribue named ```scheme``` with the name of the parser so the ```parsing_manager``` would know to collect the parsing function, with a proper name.
-
-#### Example of a new_parser.py driver that can be added
+Adding a new parser would be quite simple: just add a new .py file under the  ``` parser_drivers ``` folder,
+and implement a class with the following interface:
 
 ```pycon
->>> import json
-...
-...
->>> def parse_something(snapshot):
-...     snapshot = json.loads(snapshot)
-...     result = ... # do something to proccess snapshot data
-... 
-...     return dict(some_key=result)
-...
-...
->>> parse_something.scheme = 'some_name'
+class LoveParser:
+    scheme = "love"
+
+    @staticmethod
+    def parse(snapshot):
+            ...
+            # parsing stuff blah blah blah i'm parsing 010101
+            ...
+```
+Note that parse accepts as an argument a snapshot. <br>
+You will also required to add a  ```scheme``` with the name of the parser so the ```load_drivers``` fuction would know to collect the parser function, with a proper name.
