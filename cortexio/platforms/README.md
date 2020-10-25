@@ -3,7 +3,7 @@ This package provides platforms of different types: database, message queue, rea
 
 Each sub-package corresponds to a type of a platform. It consists of:
 * A manager module that wrapps the shared api all the other drivers has to follow.
-* A folder containing one or more driver implementation (.py files) that all follow the defined API by the wrapper class.
+* A folder containing one or more driver implementation (.py files) that all follow the defined API by the manager class.
 
 You can see an example for the message_queue platform folder hierarchy [here](messageQ)
 
