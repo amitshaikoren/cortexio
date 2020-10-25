@@ -51,7 +51,7 @@ Please note that the first time set up may take some time.
 
 #### Note: please make sure your user has docker permissions, otherwise you'll have to use the above commands with ```sudo```
 
-Copy the desired binary sample you woul'd like to read from to the ```/data``` folder.
+Copy the desired binary sample you would like to read from to the ```/data``` folder.
 (if you'd like to use the full sample, you can download it from [here](https://storage.googleapis.com/advanced-system-design/sample.mind.gz)). <br>
 For your convenience, a mini-sample is already available at the ```/data``` folder .
 
@@ -68,6 +68,7 @@ For usage of the a full sample (after it is copied to the ```/data``` folder:
 [cortexio] $ python -m cortexio.client upload-sample "./cortexio/data/sample.mind.gz"
 [cortexio] $ 
 ```    
+Please note that if you enter this command to early, all the dockers may not have been brought up completly yet, so I'd reccomend waiting about 20 seconds.
 
 Now you can use the [`cli`](/cortexio/cli/README.md) to consume the the data, or use the [`gui`](/cortexio/gui/README.md) to see an nice visualization of the data, in a website (default address will be: [http://localhost:9000](http://localhost:9000))
 
