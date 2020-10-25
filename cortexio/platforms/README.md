@@ -18,7 +18,7 @@ All the rest is taken care of, and your new driver will be available for usage w
 MessageQManager implementation would look like:
 
 ```pycon
->>> load_drivers("messageQ_drivers")
+>>> drivers = load_drivers("messageQ_drivers")
 
 >>>class MessageQManager:
 ...  def __init__(self, url):
