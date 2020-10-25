@@ -60,15 +60,12 @@ For usage of the mini-sample provided:
 
 ```sh
 [cortexio] $ python -m cortexio.client upload-sample "./cortexio/data/mini_sample.gz"
-...
-cortexio succeeded. All the 1 snapshots were uploaded!
 [cortexio] $ 
 ```    
 For usage of the a full sample (after it is copied to the ```/data``` folder:
 
 ```sh
 [cortexio] $ python -m cortexio.client upload-sample "./cortexio/data/sample.mind.gz"
-...
 [cortexio] $ 
 ```    
 
