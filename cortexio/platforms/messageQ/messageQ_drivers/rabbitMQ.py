@@ -1,5 +1,5 @@
 import pika
-
+import time
 
 # TODO: make sure there is optimal amount of workers for the needed jobs, make decisions, what parser
 #       needs what. This means implement publish and consume optimally: look more into fanout
@@ -25,7 +25,16 @@ class RabbitMQ:
         connection.close()
 
     def consume(self, topic, handler):
-        connection = pika.BlockingConnection(pika.ConnectionParameters(host=self.host, port=self.port))
+        #   This is to allow the messageQ to load (as threads will try to connect to the docker
+        #   immediately after docker loads, before messageQ loads) , and retry if connect fails.
+        while True:
+            try:
+                time.sleep(5)
+                connection = pika.BlockingConnection(pika.ConnectionParameters(host=self.host, port=self.port))
+                break
+            except:
+                continue
+
         channel = connection.channel()
         channel.exchange_declare(exchange=topic,
                                  exchange_type='fanout')

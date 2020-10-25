@@ -1,6 +1,6 @@
 FROM cortexio-base
 COPY cortexio cortexio
 
-ENV MQ_URL rabbitmq://127.0.0.1:5672
-ENV DB_URL mongodb://127.0.0.1:27017
+ENV MQ_URL rabbitmq://mq:5672
+ENV DB_URL mongodb://db:27017
 CMD python -m cortexio.saver run-saver ${DB_URL} ${MQ_URL}

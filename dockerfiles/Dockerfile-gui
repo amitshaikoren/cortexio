@@ -3,6 +3,6 @@ COPY cortexio cortexio
 
 ENV HOST 0.0.0.0
 ENV PORT 9000
-ENV API_HOST 127.0.0.1
+ENV API_HOST api
 ENV API_PORT 7000
 CMD python -m cortexio.gui run-server -h ${HOST} -p ${PORT} -H ${API_HOST} -P ${API_PORT}

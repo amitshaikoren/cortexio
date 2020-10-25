@@ -48,14 +48,11 @@ services:
     build:
       context: .
       dockerfile: ./dockerfiles/Dockerfile-parsers
-      args:
-        - MQ_URL_ARG=rabbitmq://127.0.0.1:5672
-        - PARSER_ARG=pose
     restart: on-failure
     networks:
       - cortexio-net
     environment:
-      - MQ_URL = rabbitmq://127.0.0.1:5672
+      - MQ_URL=rabbitmq://mq:5672
       - PARSER=pose
     volumes:
       - cortexio-data:/var/data/cortexio_data
@@ -67,13 +64,11 @@ services:
     build:
       context: .
       dockerfile: ./dockerfiles/Dockerfile-parsers
-      args:
-        - MQ_URL_ARG=rabbitmq://127.0.0.1:5672
-        - PARSER_ARG=feelings
     restart: on-failure
     networks:
       - cortexio-net
     environment:
+      - MQ_URL=rabbitmq://mq:5672
       - PARSER=feelings
     volumes:
       - cortexio-data:/var/data/cortexio_data
@@ -85,13 +80,11 @@ services:
     build:
       context: .
       dockerfile: ./dockerfiles/Dockerfile-parsers
-      args:
-        - MQ_URL_ARG=rabbitmq://127.0.0.1:5672
-        - PARSER_ARG=depth_image
     restart: on-failure
     networks:
       - cortexio-net
     environment:
+      - MQ_URL=rabbitmq://mq:5672
       - PARSER=depth_image
     volumes:
       - cortexio-data:/var/data/cortexio_data
@@ -105,13 +98,11 @@ services:
     build:
       context: .
       dockerfile: ./dockerfiles/Dockerfile-parsers
-      args:
-        - MQ_URL_ARG=rabbitmq://127.0.0.1:5672
-        - PARSER_ARG=color_image
     restart: on-failure
     networks:
       - cortexio-net
     environment:
+      - MQ_URL=rabbitmq://mq:5672
       - PARSER=color_image
     volumes:
       - cortexio-data:/var/data/cortexio_data
