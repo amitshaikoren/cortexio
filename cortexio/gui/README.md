@@ -4,7 +4,7 @@
 
 
 **Backend**: Flask and jinja templates <br>
-**FrondEnd**: JS, Query, ajax, html, css
+**Frontend**: JS, jQuery, ajax, html, css
 
 
 ### Usage:
