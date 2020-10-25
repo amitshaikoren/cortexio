@@ -1,7 +1,7 @@
 ## cortexio
  [![Build Status](https://travis-ci.com/amitshaikoren/cortexio.svg?branch=master)](https://travis-ci.org/amitshaikoren/cortexio)
 [![codecov](https://codecov.io/gh/amitshaikoren/cortexio/branch/master/graphs/badge.svg)](https://codecov.io/gh/amitshaikoren/cortexio)
-
+Your thoughts, your feelings, your essence: now available for everyone to see!
 
 
 ## Prerequisites
@@ -66,18 +66,14 @@ cortexio succeeded. All the 1 snapshots were uploaded!
 For usage of the a full sample (after it is copied to the ```/data``` folder:
 
 ```sh
-[cortexio] $ python -m cortexio.client upload-sample --num-snaps 10 "./cortexio/data/sample.mind.gz"
+[cortexio] $ python -m cortexio.client upload-sample "./cortexio/data/sample.mind.gz"
 ...
-cortexio succeeded. All the 10 snapshots were uploaded!
 [cortexio] $ 
 ```    
 
-#### Note:
-If not necessary, try to use small values for the  ```--num-snaps``` parameter to ensure a smooth and fast flow.
+Now you can use the [`cli`](/cortexio/cli/README.md) to consume the the data, or use the [`gui`](/cortexio/gui/README.md) to see an nice visualization of the data, in a website (default address will be: [http://localhost:9000](http://localhost:9000))
 
-Now you can use the [`cli`](/cortexio/cli/README.md) to consume the the data, or use the [`gui`](/cortexio/gui/README.md) to see an nice visualization of the data, in a website (default address will be: [http://localhost:8080](http://localhost:8080))
-
-Finally, when your'e finished, you can shut down the pipline using:
+Finally, when you're finished, you can shut down the pipline using:
 
 ```sh
 [cortexio] $ ./scripts/stop-pipeline.sh
